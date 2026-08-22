@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>中药配伍科普：君臣佐使、七情与十八反十九畏 | 南宁扶阳中医馆</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&display=swap" rel="stylesheet" />
+<meta name="description" content="中药配伍科普：讲清君臣佐使四角色、七情配伍关系、十八反十九畏禁忌，并介绍扶阳方中的经典药对。南宁扶阳中医馆科普内容，用药请以执业医师面诊辨证为准。" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23f2542d'/%3E%3Ctext x='16' y='23' font-size='20' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='%23ffffff'%3E%E6%89%B6%3C/text%3E%3C/svg%3E" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"中药配伍科普","inLanguage":"zh-CN","author":{"@type":"Organization","name":"南宁扶阳中医馆"},"publisher":{"@type":"Organization","name":"南宁扶阳中医馆","alternateName":"广西郑钦安扶阳医学研究中心"},"about":["中药配伍","君臣佐使","七情配伍","十八反","十九畏"],"articleSection":"中医科普","description":"讲清君臣佐使、七情配伍与十八反十九畏，一文看懂中药怎么搭配。"}
+</script>
+<script>(function(){try{var t=localStorage.getItem('fy-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<style>
+/* ============ Design Tokens（与主站 index.html 一致：朱红 + 暖金，深色主题） ============ */
+:root{
+  --bg:#0a0b0d;
+  --bg-2:#0e1014;
+  --glass:rgba(255,255,255,0.05);
+  --glass-2:rgba(255,255,255,0.08);
+  --hairline:rgba(255,255,255,0.10);
+  --hairline-soft:rgba(255,255,255,0.06);
+  --text:rgba(255,255,255,0.92);
+  --text-dim:rgba(255,255,255,0.62);
+  --text-faint:rgba(255,255,255,0.55);
+  --red:#f2542d;        /* 主色 · 朱红 */
+  --red-2:#d63a1f;
+  --amber:#f3b15f;      /* 辅助色 · 暖金 */
+  --r-sm:12px;
+  --r:18px;
+  --r-lg:28px;
+  --maxw:1180px;
+  --font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei',system-ui,sans-serif;
+  --font-serif:'Noto Serif SC','Songti SC',STSong,'Times New Roman',serif;
+  --font-mono:'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Code','Roboto Mono',monospace;
+  --shadow:0 18px 50px -20px rgba(0,0,0,0.7);
+  --card-hi:inset 0 1px 0 rgba(255,255,255,.055);
+  color-scheme:dark;
+}
+html[data-theme="light"]{
+  --bg:#f3efe9;--bg-2:#efe8df;
+  --glass:rgba(255,255,255,0.55);--glass-2:rgba(255,255,255,0.72);
+  --hairline:rgba(30,22,12,0.12);--hairline-soft:rgba(30,22,12,0.07);
+  --text:rgba(28,22,14,0.92);--text-dim:rgba(28,22,14,0.68);--text-faint:rgba(28,22,14,0.66);
+  --red:#d8401f;--red-2:#c0341a;--amber:#cf7a26;
+  --shadow:0 18px 50px -24px rgba(80,55,20,0.45);
+  --card-hi:inset 0 1px 0 rgba(255,255,255,.6);
+  color-scheme:light;
+}
+
+/* ============ Reset ============ */
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font-sans);
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.8;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+body::before{
+  content:"";
+  position:fixed;inset:0;z-index:-2;
+  background:
+    radial-gradient(1100px 700px at 78% -8%, rgba(242,84,45,0.16), transparent 60%),
+    radial-gradient(900px 700px at 8% 18%, rgba(243,177,95,0.12), transparent 60%),
+    linear-gradient(180deg,var(--bg),var(--bg-2));
+}
+a{color:inherit;text-decoration:none}
+.mono{font-family:var(--font-mono)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+section{position:relative}
+
+/* ============ Nav（与主站玻璃导航一致） ============ */
+.nav{
+  position:fixed;top:14px;left:0;right:0;z-index:100;
+  display:flex;justify-content:center;
+  padding:0 14px;
+}
+.nav-inner{
+  width:100%;max-width:var(--maxw);
+  display:flex;align-items:center;gap:18px;
+  padding:10px 14px 10px 18px;
+  background:var(--glass);
+  backdrop-filter:blur(24px) saturate(150%);
+  -webkit-backdrop-filter:blur(24px) saturate(150%);
+  border:1px solid var(--hairline);
+  border-radius:var(--r-lg);
+  box-shadow:var(--card-hi),var(--shadow);
+}
+.brand{display:flex;align-items:center;gap:12px;font-weight:600;letter-spacing:.2px}
+.brand .badge{
+  width:38px;height:38px;border-radius:12px;flex:none;
+  display:grid;place-items:center;
+  font-size:20px;font-weight:700;color:#fff;
+  background:linear-gradient(135deg,var(--red),var(--red-2));
+  box-shadow:0 6px 18px -6px rgba(214,58,31,.55);
+}
+.brand .name{font-size:15px;line-height:1.15;color:#fff}
+.brand .name small{display:block;font-size:11px;color:var(--text-dim);font-weight:500;letter-spacing:.4px}
+
+
+
+
+/* ============ Article ============ */
+.article{padding:150px 0 70px;content-visibility:auto;contain-intrinsic-size:auto 800px}
+.article-inner{max-width:760px;margin:0 auto}
+.pill{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:7px 14px;border-radius:999px;font-size:12.5px;color:var(--text-dim);
+  background:var(--glass);border:1px solid var(--hairline);
+}
+.pill .dot{width:7px;height:7px;border-radius:50%;background:var(--amber);box-shadow:0 0 10px var(--amber)}
+.eyebrow{font-family:var(--font-mono);font-size:12.5px;letter-spacing:2px;text-transform:uppercase;color:var(--red);margin-top:26px}
+.article h1{
+  font-size:clamp(30px,4.6vw,46px);line-height:1.18;font-weight:800;letter-spacing:-.5px;
+  margin:16px 0 14px;
+}
+.article .grad{
+  background:linear-gradient(120deg,var(--red),var(--amber));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.article .lead{font-size:16.5px;color:var(--text-dim);max-width:640px}
+.article .meta{
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  margin-top:22px;padding:14px 0;border-top:1px solid var(--hairline-soft);border-bottom:1px solid var(--hairline-soft);
+  font-size:13px;color:var(--text-faint);
+}
+.article .meta .sep{width:3px;height:3px;border-radius:50%;background:var(--hairline)}
+
+.prose{padding-top:14px}
+.prose h2{
+  font-size:clamp(21px,2.8vw,26px);font-weight:800;letter-spacing:-.3px;
+  margin:44px 0 14px;line-height:1.3;color:#fff;
+}
+.prose h2::before{
+  content:"";display:inline-block;vertical-align:middle;
+  width:8px;height:22px;border-radius:4px;margin-right:12px;
+  background:linear-gradient(180deg,var(--red),var(--amber));
+}
+.prose p{margin:0 0 16px;color:var(--text)}
+.prose strong{color:var(--amber);font-weight:700}
+.prose blockquote{
+  margin:22px 0;padding:18px 22px;border-left:3px solid var(--red);
+  border-radius:0 var(--r) var(--r) 0;
+  background:var(--glass);border:1px solid var(--hairline);border-left-width:3px;border-left-color:var(--red);
+  color:var(--text-dim);font-size:15px;
+}
+.prose blockquote b{color:var(--amber);font-weight:700}
+
+/* 源流传承时间线 */
+.timeline{margin:22px 0 8px;display:flex;flex-direction:column;gap:12px}
+.timeline .tl-item{
+  display:flex;gap:14px;align-items:flex-start;
+  padding:16px 18px;border-radius:var(--r);background:var(--glass);border:1px solid var(--hairline);
+}
+.tl-item .tl-badge{
+  width:38px;height:38px;border-radius:12px;flex:none;
+  display:grid;place-items:center;font-size:15px;font-weight:800;color:#fff;
+  background:linear-gradient(135deg,var(--red),var(--red-2));
+  box-shadow:0 6px 18px -6px rgba(214,58,31,.55);
+}
+.tl-item .tl-body b{display:block;font-size:15.5px;color:#fff;margin-bottom:3px}
+.tl-item .tl-body .tl-sub{font-family:var(--font-mono);font-size:12px;color:var(--amber);letter-spacing:.5px}
+.tl-item .tl-body p{font-size:14px;color:var(--text-dim);margin:6px 0 0}
+
+/* 对比卡 */
+.combo{
+  display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:22px 0;
+}
+.combo .c{
+  padding:18px 20px;border-radius:var(--r);background:var(--glass);border:1px solid var(--hairline);
+}
+.combo .c b{display:block;font-size:15px;color:var(--amber);margin-bottom:6px}
+.combo .c p{font-size:14px;color:var(--text-dim);margin:0}
+
+/* 误解清单 */
+.myth{padding:16px 20px;border-radius:var(--r);background:var(--glass);border:1px solid var(--hairline);margin-bottom:12px}
+.myth .m-title{display:flex;align-items:baseline;gap:10px;font-size:15.5px;font-weight:700;color:#fff;margin-bottom:6px}
+.myth .m-title .no{font-family:var(--font-mono);font-size:13px;color:var(--red);font-weight:800}
+.myth p{font-size:14.5px;color:var(--text-dim);margin:0}
+
+/* 关于本站 */
+.about-card{
+  margin-top:56px;padding:28px;border-radius:var(--r-lg);
+  background:var(--glass);border:1px solid var(--hairline);
+}
+.about-card h2{font-size:20px;font-weight:800;margin-bottom:12px;color:#fff}
+.about-card h2::before{
+  content:"";display:inline-block;vertical-align:middle;
+  width:8px;height:20px;border-radius:4px;margin-right:12px;
+  background:linear-gradient(180deg,var(--red),var(--amber));
+}
+.about-card p{font-size:14.5px;color:var(--text-dim);margin-bottom:12px}
+.about-card .note{
+  padding:14px 16px;border-radius:var(--r-sm);font-size:13.5px;
+  background:rgba(243,177,95,0.08);border:1px solid rgba(243,177,95,0.28);color:var(--amber);
+}
+
+/* ============ Footer（与主站一致） ============ */
+.footer{padding:70px 0 36px;margin-top:60px;border-top:1px solid var(--hairline-soft)}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:36px;margin-bottom:40px}
+.foot-brand .brand{margin-bottom:14px}
+.foot-brand p{color:var(--text-dim);font-size:14px;max-width:360px}
+.foot-col h4{font-size:14px;font-weight:700;margin-bottom:14px;letter-spacing:.3px}
+.foot-links{display:flex;flex-wrap:wrap;gap:8px 14px;max-width:420px}
+.foot-links a{display:inline-flex;align-items:center;gap:6px;color:var(--text-dim);font-size:13.5px;padding:4px 0;transition:color .25s ease,transform .25s ease}
+.foot-links a:hover{color:var(--text);transform:translateX(3px)}
+.foot-links a svg{width:14px;height:14px;stroke:var(--amber);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:24px;border-top:1px solid var(--hairline-soft);color:var(--text-faint);font-size:12.5px}
+.disclaimer{font-size:12px;color:var(--text-faint);max-width:800px;margin-top:10px;line-height:1.7}
+
+@media (max-width:720px){
+  .brand .name small{display:none}
+  
+  .combo{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+}
+h1,h2{font-family:var(--font-serif)}
+/* ============ 统一顶栏（与首页一致，v7.33） ============ */
+/* ============ Nav ============ */
+.nav{
+  position:fixed;top:14px;left:0;right:0;z-index:100;
+  display:flex;justify-content:center;
+  padding:0 14px;
+}
+.nav-inner{
+  width:100%;max-width:var(--maxw);
+  display:flex;align-items:center;gap:18px;
+  padding:10px 14px 10px 18px;
+  background:var(--glass);
+  backdrop-filter:blur(24px) saturate(150%);
+  -webkit-backdrop-filter:blur(24px) saturate(150%);
+  border:1px solid var(--hairline);
+  border-radius:var(--r-lg);
+  box-shadow:var(--card-hi),var(--shadow);
+  transition:background .3s ease,border-color .3s ease;
+}
+.nav-inner.scrolled{background:var(--glass-2);border-color:var(--hairline)}
+.brand{display:flex;align-items:center;gap:12px;font-weight:600;letter-spacing:.2px}
+.brand .badge{
+  width:38px;height:38px;border-radius:12px;flex:none;
+  display:grid;place-items:center;
+  font-size:20px;font-weight:700;color:#fff;
+  background:linear-gradient(135deg,var(--red),var(--red-2));
+  box-shadow:0 6px 18px -6px rgba(214,58,31,.55);
+}
+.brand .name{font-size:15px;line-height:1.15;color:var(--text-dim)}
+.brand .name small{display:block;font-size:11px;color:var(--text-dim);font-weight:500;letter-spacing:.4px}
+.nav-links{display:flex;gap:4px;margin-left:auto}
+.nav-links a{
+  position:relative;
+  padding:8px 14px;border-radius:10px;font-size:14px;color:var(--text-dim);
+  transition:color .25s ease,background .25s ease,transform .25s ease;
+}
+.nav-links a::after{content:"";position:absolute;left:14px;right:14px;bottom:5px;height:2px;border-radius:2px;
+  background:linear-gradient(90deg,var(--red),var(--amber));transform:scaleX(0);transform-origin:center;
+  transition:transform .3s cubic-bezier(.22,1,.36,1)}
+.nav-links a:hover{color:var(--text);background:var(--glass-2);transform:translateY(-1px)}
+.nav-links a.active{color:var(--text);background:var(--glass-2)}
+.nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1)}
+.nav-actions{display:flex;align-items:center;gap:10px;margin-left:6px}
+.icon-btn{
+  width:44px;height:44px;border-radius:13px;display:grid;place-items:center;
+  background:var(--glass-2);border:1px solid var(--hairline);
+  transition:transform .25s ease,background .25s ease;
+}
+.icon-btn:hover{transform:translateY(-2px);background:var(--glass)}
+.icon-btn svg{width:19px;height:19px;stroke:var(--text);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.cta-mini{
+  padding:9px 16px;border-radius:12px;font-size:13.5px;font-weight:600;color:#fff;
+  background:linear-gradient(180deg,rgba(255,255,255,.16),rgba(255,255,255,0) 46%),linear-gradient(135deg,var(--red),var(--red-2));
+  transition:transform .25s ease,box-shadow .25s ease;
+  box-shadow:var(--card-hi),0 8px 22px -10px rgba(214,58,31,.6);
+}
+.cta-mini:hover{transform:translateY(-2px)}
+.menu-toggle{display:none}
+.nav-mobile{display:none}
+
+/* ============ 二维码预约弹窗 ============ */
+.qr-modal{position:fixed;inset:0;z-index:300;display:grid;place-items:center;background:rgba(0,0,0,.55);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);padding:22px}
+.qr-modal[hidden]{display:none}
+.qr-modal-box{position:relative;padding:30px 28px 26px;border-radius:var(--r-lg);background:var(--bg-2);border:1px solid var(--hairline);text-align:center;max-width:340px;width:100%;box-shadow:var(--shadow)}
+.qr-modal-box img{width:200px;height:200px;margin:0 auto 14px;border-radius:12px;border:1px solid var(--hairline);background:#fff}
+.qr-modal-box b{display:block;font-size:16px;font-weight:700;margin-bottom:6px}
+.qr-modal-box span{font-size:13px;color:var(--text-dim)}
+.qr-modal-close{position:absolute;top:12px;right:12px;width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:var(--glass-2);border:1px solid var(--hairline-soft);color:var(--text-dim);transition:color .25s}
+.qr-modal-close:hover{color:var(--text)}
+.qr-modal-close svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* ============ Progress + a11y + to-top ============ */
+.skip-link{position:absolute;left:-9999px;top:10px}
+.skip-link:focus{left:16px;z-index:300;padding:10px 16px;border-radius:12px;background:var(--red);color:#fff;font-weight:600;outline:none}
+.progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:130;background:linear-gradient(90deg,var(--red),var(--amber));transform:scaleX(0);transform-origin:left;transition:transform .1s linear}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:6px}
+.to-top{position:fixed;right:22px;bottom:22px;z-index:110;width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:var(--glass-2);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--hairline);box-shadow:var(--shadow);opacity:0;transform:translateY(16px);pointer-events:none;transition:opacity .35s ease,transform .35s ease,background .25s ease}
+.to-top.show{opacity:1;transform:none;pointer-events:auto}
+.to-top:hover{background:var(--glass);transform:translateY(-3px)}
+.to-top svg{width:20px;height:20px;stroke:var(--text);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+@media(max-width:680px){
+  .nav-links,.cta-mini{display:none}
+  .menu-toggle{display:grid}
+  .nav-mobile{
+    display:none;flex-direction:column;gap:4px;margin-top:10px;padding:12px;
+    background:var(--glass-2);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
+    border:1px solid var(--hairline);border-radius:var(--r);
+  }
+  .nav-mobile.open{display:flex}
+  .nav-mobile a{padding:12px 14px;border-radius:10px;color:var(--text-dim);font-size:15px}
+  .nav-mobile a:hover{background:var(--glass);color:var(--text)}
+}
+</style>
+<meta property="og:image" content="../assets/images/heritage.png" />
+<!-- TODO: 上线后替换为绝对地址 https://域名/../assets/images/heritage.png -->
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<div class="nav">
+  <nav class="nav-inner" aria-label="主导航">
+    <a class="brand" href="#top" aria-label="南宁扶阳中医馆 首页">
+      <span class="badge">扶</span>
+      <span class="name">南宁扶阳中医馆<small>广西郑钦安扶阳医学研究中心</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="../index.html">首页</a>
+      <a href="../index.html#services">诊疗服务</a>
+      <a href="zhongyao-xiangwu.html" class="active" aria-current="page">中药配伍科普</a>
+      <a href="../index.html#about">关于我们</a>
+    </div>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeBtn" aria-label="切换亮暗主题" title="切换亮暗主题">
+        <svg id="iconMoon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a href="../index.html#top" class="cta-mini" id="ctaBook">预约挂号</a>
+      <button class="icon-btn menu-toggle" id="menuBtn" aria-label="打开菜单">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="#top">首页</a>
+      <a href="../index.html#services">诊疗服务</a>
+      <a href="zhongyao-xiangwu.html" class="active" aria-current="page">中药配伍科普</a>
+      <a href="../index.html#about">关于我们</a>
+    </div>
+  </nav>
+</div>
+
+<!-- ============ ARTICLE ============ -->
+<main class="article" id="top">
+  <div class="wrap">
+    <div class="article-inner">
+
+      <span class="pill"><span class="dot"></span>中医科普 · 中药方剂</span>
+      <div class="eyebrow mono">Herbal Compatibility · 配伍之道</div>
+
+      <h1>中药<span class="grad">配伍</span>科普</h1>
+      <p class="lead">同一张方子里，各味药为什么这样"搭"？君臣佐使如何分工，十八反十九畏又是什么？这篇用通俗的话，把中药配伍的基本规则讲清楚。</p>
+
+      <div class="meta">
+        <span>南宁扶阳中医馆</span>
+        <span class="sep"></span>
+        <span>科普专栏 · 中药篇</span>
+        <span class="sep"></span>
+        <span>约 8 分钟阅读</span>
+      </div>
+
+      <div class="prose">
+
+        <h2>为什么中药讲究"配伍"</h2>
+        <p>单味药常有力单势薄、顾此失彼之弊。将两味或两味以上药物按一定法则组合成方，即"配伍"。配伍的目的，一是增效——取药物之间的协同作用；二是减毒——以一味药制约另一味药的偏性；三是全面——兼顾主症与兼症，使整个方子主次分明、各司其职。</p>
+        <p>古人将这种组方的法则总结为"君臣佐使"，把药物之间的关系归纳为"七情"，并划出了"十八反、十九畏"的用药禁区。三套规则，共同构成中药配伍的骨架。</p>
+
+        <h2>君臣佐使：一张方的骨架</h2>
+        <p>《神农本草经》以"君臣佐使"比喻方中各药的角色分工。一张方子好比一支队伍：</p>
+        <table>
+          <thead><tr><th>角色</th><th>职责</th><th>举例（以扶阳方为例）</th></tr></thead>
+          <tbody>
+            <tr><td><b>君药</b></td><td>针对主病主证，起主要治疗作用的药物，一方之主</td><td>附子——温补阳气、回阳救逆</td></tr>
+            <tr><td><b>臣药</b></td><td>辅助君药加强疗效，或针对兼证</td><td>干姜——温中散寒，助附子温阳</td></tr>
+            <tr><td><b>佐药</b></td><td>制约君、臣药的毒性或烈性，或反佐、引经</td><td>炙甘草——调和药性、护中土</td></tr>
+            <tr><td><b>使药</b></td><td>引药达病所，或调和诸药</td><td>甘草——"国老"，调和诸药</td></tr>
+          </tbody>
+        </table>
+        <p>方中的君臣佐使并非刻板划分——大方可数味乃至数十味，小方两味亦可成方，关键在于"有主有次、相互配合"。</p>
+
+        <h2>七情配伍：药物之间的关系</h2>
+        <p>《神农本草经》将单味药之外，药物与药物之间的关系概括为"七情"：</p>
+        <table>
+          <thead><tr><th>关系</th><th>含义</th><th>举例</th></tr></thead>
+          <tbody>
+            <tr><td><b>单行</b></td><td>单味药应用，不需配伍</td><td>独参汤（单用人参）</td></tr>
+            <tr><td><b>相须</b></td><td>性能相似的药物同用，增强疗效</td><td>附子配干姜，温阳之力更著</td></tr>
+            <tr><td><b>相使</b></td><td>一药为主，一药为辅，辅药助主药</td><td>黄芪配茯苓，利水之功更显</td></tr>
+            <tr><td><b>相畏</b></td><td>一药的毒性被另一药抑制</td><td>生姜制半夏毒</td></tr>
+            <tr><td><b>相杀</b></td><td>一药能消除另一药的毒性</td><td>绿豆解巴豆毒</td></tr>
+            <tr><td><b>相恶</b></td><td>两药同用，一方削弱另一方药力</td><td>人参恶莱菔子</td></tr>
+            <tr><td><b>相反</b></td><td>两药同用产生或增强毒性（属配伍禁忌）</td><td>十八反所列诸药</td></tr>
+          </tbody>
+        </table>
+        <p>其中"相畏、相杀"利用得当可减毒增效，临床常有意为之；"相恶"应尽量避免；"相反"则属禁用之列。</p>
+
+        <h2>十八反、十九畏：不能搭的禁忌</h2>
+        <p>中药配伍有明确的用药禁区，集中体现于"十八反、十九畏"两组歌诀。为便于记忆，历代将其编为歌诀流传：</p>
+        <blockquote>本草明言十八反：半蒌贝蔹及攻乌，藻戟遂芫俱战草，诸参辛芍叛藜芦。</blockquote>
+        <p>即：<b>乌头（川乌、草乌、附子）</b>反半夏、瓜蒌、贝母、白蔹、白及；<b>甘草</b>反海藻、大戟、甘遂、芫花；<b>藜芦</b>反人参、沙参、丹参、玄参、细辛、芍药等各类参与辛芍之品。</p>
+        <blockquote>硫磺原是火中精，朴硝一见便相争；水银莫与砒霜见，狼毒最怕密陀僧；巴豆性烈最为上，偏与牵牛不顺情；丁香莫与郁金见，牙硝难合京三棱；川乌草乌不顺犀，人参最怕五灵脂；官桂善能调冷气，若逢石脂便相欺。</blockquote>
+        <p>即<b>十九畏</b>：硫磺畏朴硝、水银畏砒霜、狼毒畏密陀僧、巴豆畏牵牛、丁香畏郁金、牙硝畏三棱、川乌草乌畏犀角、人参畏五灵脂、官桂畏石脂。</p>
+        <p class="note">需要说明的是：现代研究对部分"相反、相畏"组合的认识仍存在争议，历代医家亦有变通使用的医案；但作为用药安全底线，正规临床一般遵循传统禁忌，不轻易配伍。您自行配伍或听信偏方组合用药，存在明确风险，务必避免。</p>
+
+        <h2>扶阳方里的经典药对</h2>
+        <p>扶阳医学以"温扶阳气"为立法核心，其常用药对在配伍法则下尤见章法：</p>
+        <table>
+          <thead><tr><th>药对</th><th>配伍关系</th><th>功效方向</th></tr></thead>
+          <tbody>
+            <tr><td><b>附子 · 干姜</b></td><td>相须为用</td><td>回阳救逆，温中散寒，扶阳第一配伍</td></tr>
+            <tr><td><b>桂枝 · 白芍</b></td><td>一散一收</td><td>调和营卫、燮理阴阳，桂枝汤之核心</td></tr>
+            <tr><td><b>黄芪 · 当归</b></td><td>气生血、血载气</td><td>补气生血，气血同调</td></tr>
+            <tr><td><b>白术 · 茯苓</b></td><td>相使相助</td><td>健脾渗湿，杜生痰之源</td></tr>
+          </tbody>
+        </table>
+        <p>药对是配伍的"最小单元"，理解药对，是理解整张方子的一把钥匙。</p>
+
+        <h2>配伍之外的叮嘱</h2>
+        <p>配伍只是中药组方的一部分。真正安全有效的方剂，还取决于<b>辨证是否准确、剂量是否恰当、煎服是否得法</b>。同一味药、同一个药对，证候不同用法迥异；剂量悬殊，功效甚至相反。因此：</p>
+        <ul>
+          <li>不要照方抓药、自行组方，更不要相信"偏方、秘方"的搭配组合；</li>
+          <li>中成药与汤药同服前，请先咨询医师，避免重复用药或配伍冲突；</li>
+          <li>服药期间出现不适，应及时停药并咨询开方医师。</li>
+        </ul>
+        <p>本页为中医基础理论科普，不构成任何用药建议。具体辨证与处方，请以执业医师面诊为准。</p>
+
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="../index.html">
+          <span class="badge">扶</span>
+          <span class="name">南宁扶阳中医馆<small>广西郑钦安扶阳医学研究中心</small></span>
+        </a>
+        <p>扶阳固本、阴阳同调、内外同治。专注睡眠障碍、代谢疾病、男科康复三大专病门诊。</p>
+      </div>
+      <div class="foot-col">
+        <h4>站内导航</h4>
+        <div class="foot-links">
+          <a href="../index.html"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>返回首页</a>
+          <a href="../visit.html"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>到院指南</a>
+          <a href="../sleep.html"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17 11h-10v6a5 5 0 0 0 10 0z"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>睡眠门诊</a>
+          <a href="../metabolism.html"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><path d="M12 3a9 9 0 1 0 9 9"/></svg>代谢门诊</a>
+          <a href="../mens.html"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><path d="M12 3a9 9 0 1 0 9 9"/></svg>男科门诊</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 南宁扶阳中医馆 · 广西郑钦安扶阳医学研究中心　保留所有权利</span>
+      <span class="mono">扶阳固本 · 阴阳同调 · 内外同治</span>
+    </div>
+    <p style="text-align:center;font-size:12px;color:var(--text-faint);margin-top:12px">《中医诊所备案证》登记号：MAKGHJ6M-045010315D2182 · 资质可在国家卫健委政务服务平台查询（<a href="https://zwfw.nhc.gov.cn/cxx/" target="_blank" rel="noopener" style="color:var(--amber)">zwfw.nhc.gov.cn/cxx</a>）</p>
+    <p style="text-align:center;font-size:12px;color:var(--text-faint);margin-top:6px">ICP 备案：桂ICP备XXXXXXXX号（办理中） · <a href="../privacy.html" style="color:var(--amber)">隐私政策</a></p>
+    <p class="disclaimer">免责声明：本文为科普内容，不构成诊断与治疗建议，具体以执业医师面诊为准。本网站所有文章仅供科普与宣传之用，如有明显不适，请及时就医。</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var KEY='fy-theme';
+  var btn=document.getElementById('themeBtn');
+  function icon(light){var s=btn?btn.querySelector('svg'):null;if(!s)return;s.innerHTML=light?'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>':'<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>';}
+  function apply(t){document.documentElement.setAttribute('data-theme',t);icon(t==='light');}
+  if(btn)btn.addEventListener('click',function(){var t=document.documentElement.getAttribute('data-theme')==='light'?'dark':'light';apply(t);try{localStorage.setItem(KEY,t)}catch(e){}});
+  window.addEventListener('storage',function(e){if(e.key===KEY&&e.newValue)apply(e.newValue);});
+  apply(document.documentElement.getAttribute('data-theme')||'dark');
+})();
+</script>
+<div class="qr-modal" id="qrModal" role="dialog" aria-modal="true" aria-label="微信扫码预约" hidden>
+  <div class="qr-modal-box">
+    <button class="qr-modal-close" id="qrClose" aria-label="关闭二维码弹窗"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+    <img src="../assets/images/qr-booking.jpg" alt="南宁扶阳中医馆预约二维码" width="220" height="220"/>
+    <b>微信扫码预约</b>
+    <span>关注公众号 / 小程序在线预约挂号</span>
+  </div>
+</div>
+
+</body>
+</html>

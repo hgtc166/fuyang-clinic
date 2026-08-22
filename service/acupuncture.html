@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>南宁针灸调理 · 针灸服务 | 南宁扶阳中医馆</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&display=swap" rel="stylesheet" />
+<meta name="description" content="南宁扶阳中医馆提供针灸调理服务，以调和经络气血为法，用于失眠、代谢与男科等专科的辅助辨证调理。针灸由执业医师操作，面诊辨证后确定方案。针灸注意事项以面诊指导为准。" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23f2542d'/%3E%3Ctext x='16' y='23' font-size='20' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='%23ffffff'%3E%E6%89%B6%3C/text%3E%3C/svg%3E" />
+<!-- ===== 结构化数据：FAQPage（针灸四问，与页面 FAQ 一一对应）+ MedicalService（针灸调理） ===== -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"针灸疼吗？","acceptedAnswer":{"@type":"Answer","text":"针感因人而异，多数人可接受，操作由执业医师把握。进针时或会有轻微刺感，随后多以酸、麻、胀、重等针感为主，具体感受因个体与取穴而异。"}},
+{"@type":"Question","name":"针灸多久做一次？","acceptedAnswer":{"@type":"Answer","text":"针灸的频次与疗程因人而异，需结合体质、辨证与调理进展确定，以执业医师面诊评估为准。"}},
+{"@type":"Question","name":"针灸前后要注意什么？","acceptedAnswer":{"@type":"Answer","text":"建议衣着宽松，避免过度空腹或过饱；针后注意针孔处清洁与局部保暖。具体注意事项因个体情况而异，以执业医师面诊时的指导为准。"}},
+{"@type":"Question","name":"如何预约？","acceptedAnswer":{"@type":"Answer","text":"可通过电话 18878669106 或官方公众号、微信小程序预约，到馆后由执业医师面诊辨证，再确定具体针灸方案。"}}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MedicalService","name":"针灸","serviceType":"针灸调理","provider":{"@type":"MedicalOrganization","name":"南宁扶阳中医馆"},"areaServed":"南宁市青秀区","description":"中医针灸调理服务，用于失眠、代谢与男科等专科的辅助辨证调理。"}
+</script>
+<script>(function(){try{var t=localStorage.getItem('fy-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<style>
+/* ===== 设计令牌（与主站 index.html 完全一致：朱红+暖金、深色为主、Inter 字体栈） ===== */
+:root{
+  --bg:#0a0b0d;--bg-2:#0e1014;
+  --glass:rgba(255,255,255,0.05);--glass-2:rgba(255,255,255,0.08);
+  --hairline:rgba(255,255,255,0.10);--hairline-soft:rgba(255,255,255,0.06);
+  --text:rgba(255,255,255,0.92);--text-dim:rgba(255,255,255,0.62);--text-faint:rgba(255,255,255,0.55);
+  --red:#f2542d;--red-2:#d63a1f;--amber:#f3b15f;
+  --r-sm:12px;--r:18px;--r-lg:28px;--maxw:1180px;
+  --font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei',system-ui,sans-serif;
+  --font-serif:'Noto Serif SC','Songti SC',STSong,'Times New Roman',serif;
+  --font-mono:'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Code','Roboto Mono',monospace;
+  --shadow:0 18px 50px -20px rgba(0,0,0,0.7);
+  --card-hi:inset 0 1px 0 rgba(255,255,255,.055);
+  color-scheme:dark;
+}
+html[data-theme="light"]{
+  --bg:#f3efe9;--bg-2:#efe8df;
+  --glass:rgba(255,255,255,0.55);--glass-2:rgba(255,255,255,0.72);
+  --hairline:rgba(30,22,12,0.12);--hairline-soft:rgba(30,22,12,0.07);
+  --text:rgba(28,22,14,0.92);--text-dim:rgba(28,22,14,0.68);--text-faint:rgba(28,22,14,0.66);
+  --red:#d8401f;--red-2:#c0341a;--amber:#cf7a26;
+  --shadow:0 18px 50px -24px rgba(80,55,20,0.45);
+  --card-hi:inset 0 1px 0 rgba(255,255,255,.6);
+  color-scheme:light;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-sans);background:var(--bg);color:var(--text);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(1100px 700px at 78% -8%, rgba(242,84,45,0.16), transparent 60%),radial-gradient(900px 700px at 8% 18%, rgba(243,177,95,0.12), transparent 60%),linear-gradient(180deg,var(--bg),var(--bg-2))}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+
+/* ===== 顶部导航 ===== */
+.nav{position:fixed;top:14px;left:0;right:0;z-index:100;display:flex;justify-content:center;padding:0 14px}
+.nav-inner{width:100%;max-width:var(--maxw);display:flex;align-items:center;gap:18px;padding:10px 14px 10px 18px;background:var(--glass);backdrop-filter:blur(24px) saturate(150%);-webkit-backdrop-filter:blur(24px) saturate(150%);border:1px solid var(--hairline);border-radius:var(--r-lg);box-shadow:var(--card-hi),var(--shadow)}
+.brand{display:flex;align-items:center;gap:12px;font-weight:600}
+.brand .badge{width:38px;height:38px;border-radius:12px;flex:none;display:grid;place-items:center;font-size:20px;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--red),var(--red-2));box-shadow:0 6px 18px -6px rgba(214,58,31,.55)}
+.nav-links{display:flex;gap:4px;margin-left:auto;align-items:center}
+.nav-links a{padding:8px 13px;border-radius:10px;font-size:14px;color:var(--text-dim);transition:color .25s ease,background .25s ease}
+.nav-links a:hover{color:var(--text);background:var(--glass-2)}
+.nav-links a.active{color:var(--text);background:var(--glass-2);font-weight:600}
+
+/* ===== Hero ===== */
+.hero{padding:150px 0 46px;text-align:center}
+.eyebrow{display:inline-block;font-family:var(--font-mono);font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--red);border:1px solid var(--hairline);background:var(--glass);padding:7px 14px;border-radius:99px;margin-bottom:20px}
+.hero h1{font-size:clamp(34px,5vw,52px);font-weight:800;letter-spacing:-.5px;line-height:1.12;margin:14px 0 18px}
+.hero p{color:var(--text-dim);font-size:17px;max-width:640px;margin:0 auto}
+
+/* ===== 区块 ===== */
+.sec{padding:56px 0}
+.sec-head{text-align:center;margin-bottom:38px}
+.sec-head h2{font-size:clamp(26px,3.4vw,38px);font-weight:800;letter-spacing:-.3px;margin:14px 0 12px}
+.sec-head h2::after{content:"";display:block;width:56px;height:3px;margin:16px auto 0;border-radius:99px;background:linear-gradient(90deg,var(--red),var(--amber))}
+.sec-head p{color:var(--text-dim);font-size:15.5px}
+
+/* ===== 双栏与信息卡 ===== */
+.loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:stretch}
+.info-card{padding:30px;border-radius:var(--r-lg);background:var(--glass);border:1px solid var(--hairline);box-shadow:var(--card-hi)}
+.info-card h3{font-size:20px;font-weight:800;margin-bottom:18px}
+.info-row{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--hairline-soft)}
+.info-row:last-of-type{border-bottom:none}
+.info-row .ic{width:40px;height:40px;border-radius:11px;flex:none;display:grid;place-items:center;background:var(--glass-2);border:1px solid var(--hairline-soft)}
+.info-row .ic svg{width:19px;height:19px;stroke:var(--red);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.info-row b{display:block;font-size:14px}
+.info-row span{font-size:13.5px;color:var(--text-dim)}
+
+/* ===== 要点 3 列 ===== */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.step{padding:26px 22px;border-radius:var(--r);background:var(--glass);border:1px solid var(--hairline);box-shadow:var(--card-hi);position:relative}
+.step .no{font-family:var(--font-mono);font-size:12px;letter-spacing:1.5px;color:var(--amber);margin-bottom:12px}
+.step h4{font-size:16.5px;font-weight:700;margin-bottom:8px}
+.step p{font-size:13.5px;color:var(--text-dim);line-height:1.7}
+
+/* ===== FAQ（手风琴，与主站一致） ===== */
+.faq{max-width:760px;margin:0 auto;display:grid;gap:12px}
+.faq-item{border-radius:var(--r);background:var(--glass);border:1px solid var(--hairline);overflow:hidden;box-shadow:var(--card-hi)}
+.faq-q{width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 22px;font-size:16px;font-weight:600;text-align:left}
+.faq-q svg{width:20px;height:20px;stroke:var(--text-dim);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .35s ease;flex:none}
+.faq-item.open .faq-q svg{transform:rotate(180deg);stroke:var(--red)}
+.faq-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s cubic-bezier(.22,1,.36,1)}
+.faq-item.open .faq-panel{grid-template-rows:1fr}
+.faq-panel>div{overflow:hidden}
+.faq-a{padding:0 22px 20px;font-size:14.5px;color:var(--text-dim);line-height:1.8;opacity:0;transform:translateY(-6px);transition:opacity .3s ease,transform .3s ease}
+.faq-item.open .faq-a{opacity:1;transform:none}
+
+/* ===== 页脚 ===== */
+.footer{border-top:1px solid var(--hairline);padding:40px 0 56px;margin-top:30px}
+.footer .wrap{display:flex;flex-wrap:wrap;gap:26px;justify-content:space-between;align-items:center}
+.footer .links{display:flex;flex-wrap:wrap;gap:18px;font-size:14px;color:var(--text-dim)}
+.footer .links a:hover{color:var(--text)}
+.footer .copy{font-size:12.5px;color:var(--text-faint)}
+.disclaimer{margin-top:18px;font-size:12px;color:var(--text-faint);line-height:1.8}
+
+/* ===== Reveal 动画（仅 transform/opacity） ===== */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* ===== 响应式 ===== */
+@media (max-width:900px){
+  .loc-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:680px){
+  .nav-links a{font-size:13px;padding:7px 9px}
+  .hero{padding:126px 0 40px}
+  .steps{grid-template-columns:1fr}
+  .info-card{padding:24px}
+  .sec{padding:44px 0}
+}
+h1,h2{font-family:var(--font-serif)}
+</style>
+<meta property="og:image" content="../assets/images/heritage.png" />
+<!-- TODO: 上线后替换为绝对地址 https://域名/../assets/images/heritage.png -->
+</head>
+<body>
+
+<!-- ===== 顶部导航：链接指向主站各页面（相对 service/ 子目录） ===== -->
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="../index.html">
+      <span class="badge">扶</span>
+      <span>南宁扶阳中医馆</span>
+    </a>
+    <nav class="nav-links" aria-label="站内导航">
+      <a href="../index.html">首页</a>
+      <a href="../sleep.html">睡眠门诊</a>
+      <a href="../metabolism.html">代谢门诊</a>
+      <a href="../mens.html">男科门诊</a>
+      <a href="../visit.html">到院指南</a>
+    </nav>
+<button id="themeBtn" aria-label="切换亮暗主题" title="切换亮暗主题" style="width:44px;height:44px;border-radius:13px;flex:none;margin-left:auto;display:grid;place-items:center;border:1px solid var(--hairline);background:var(--glass);cursor:pointer">
+      <svg viewBox="0 0 24 24" style="width:17px;height:17px;stroke:var(--text-dim);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- ===== Hero：针灸调理主视觉 ===== -->
+  <section class="hero wrap reveal">
+    <span class="eyebrow">Acupuncture</span>
+    <h1>针灸调理</h1>
+    <p>以调和经络气血为法，作为中医外治法之一，用于失眠、代谢与男科等专科的辅助辨证调理。针灸由执业医师操作，面诊辨证后确定个体化方案。</p>
+  </section>
+
+  <!-- ===== 区块 1：针灸是什么（科普） ===== -->
+  <section class="sec wrap">
+    <div class="sec-head reveal">
+      <h2>针灸是什么</h2>
+      <p>针灸是中医外治法之一，以细针刺入特定腧穴，重在调和经络气血、疏通经络。</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="no">01 · 外治一法</div><h4>中医外治法之一</h4><p>针灸与中药、艾灸等同属中医调理方式，由执业医师依据辨证操作。</p></div>
+      <div class="step reveal"><div class="no">02 · 调和气血</div><h4>调和经络气血</h4><p>通过细针刺激特定腧穴，重在调和经络气血、疏通经络，讲究得气与针感。</p></div>
+      <div class="step reveal"><div class="no">03 · 辅助辨证</div><h4>专科辅助调理</h4><p>在本馆用于失眠、代谢与男科等专科的辅助辨证调理，具体方案以面诊为准。</p></div>
+    </div>
+  </section>
+
+  <!-- ===== 区块 2：适用与注意事项 ===== -->
+  <section class="sec wrap">
+    <div class="sec-head reveal">
+      <h2>适用与注意事项</h2>
+      <p>是否适合针灸、如何操作，均以执业医师面诊辨证为准。</p>
+    </div>
+    <div class="info-card reveal" style="max-width:760px;margin:0 auto">
+      <div class="info-row">
+        <div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 8.7l5.4-.8z"/></svg></div>
+        <div><b>执业医师操作</b><span>针灸由执业医师操作，进针前经面诊辨证，确定取穴与调理方案。</span></div>
+      </div>
+      <div class="info-row">
+        <div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+        <div><b>针感为正常反应</b><span>针刺时出现酸、麻、胀、重等针感，属于常见反应，具体感受因人而异。</span></div>
+      </div>
+      <div class="info-row">
+        <div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div>
+        <div><b>禁忌人群以面诊评估为准</b><span>是否适合针灸、有无禁忌情况，由执业医师面诊时评估判断，请勿自行判断。</span></div>
+      </div>
+      <div class="info-row">
+        <div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 4h16v16H4z"/><path d="M4 6l8 6 8-6"/></svg></div>
+        <div><b>衣着宽松建议</b><span>到馆前建议穿着宽松衣物，便于取穴操作与局部保暖。</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 区块 3：针灸与艾灸的区别 ===== -->
+  <section class="sec wrap">
+    <div class="sec-head reveal">
+      <h2>针灸与艾灸的区别</h2>
+      <p>两者各有侧重，适合哪种方式建议由医师面诊时评估确定。</p>
+    </div>
+    <div class="loc-grid">
+      <div class="info-card reveal">
+        <h3>针灸</h3>
+        <div class="info-row">
+          <div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2v20M12 7c-3 0-3 3 0 3s3 3 0 3-3 3 0 3"/></svg></div>
+          <div><b>侧重调和经络气血</b><span>以细针刺入腧穴，重在调和经络气血、疏通经络，操作由执业医师把握。</span></div>
+        </div>
+      </div>
+      <div class="info-card reveal">
+        <h3>艾灸</h3>
+        <div class="info-row">
+          <div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-6-4.5-6-9a6 6 0 1 1 12 0c0 4.5-6 9-6 9z"/></svg></div>
+          <div><b>侧重温煦阳气</b><span>借助温热刺激特定腧穴，侧重温煦阳气、散寒通络，常与针灸配合辨证选用。</span></div>
+        </div>
+      </div>
+    </div>
+    <p class="reveal" style="text-align:center;max-width:640px;margin:26px auto 0;color:var(--text-dim);font-size:14.5px">针灸与艾灸各有侧重，可单独使用，也可配合选用，具体方案以面诊辨证为准。</p>
+  </section>
+
+  <!-- ===== FAQ：针灸四问（与 JSON-LD 同步） ===== -->
+  <section class="sec wrap">
+    <div class="sec-head reveal">
+      <h2>针灸常见问题</h2>
+      <p>关于针灸，常被问到这几件事。</p>
+    </div>
+    <div class="faq reveal" id="faqList">
+      <div class="faq-item">
+        <button class="faq-q">针灸疼吗？<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="faq-panel"><div><p class="faq-a">针感因人而异，多数人可接受，操作由执业医师把握。进针时或会有轻微刺感，随后多以酸、麻、胀、重等针感为主，具体感受因个体与取穴而异。</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">针灸多久做一次？<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="faq-panel"><div><p class="faq-a">针灸的频次与疗程因人而异，需结合体质、辨证与调理进展确定，以执业医师面诊评估为准。</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">针灸前后要注意什么？<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="faq-panel"><div><p class="faq-a">建议衣着宽松，避免过度空腹或过饱；针后注意针孔处清洁与局部保暖。具体注意事项因个体情况而异，以执业医师面诊时的指导为准。</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">如何预约？<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="faq-panel"><div><p class="faq-a">可通过电话 18878669106 或官方公众号、微信小程序预约，到馆后由执业医师面诊辨证，再确定具体针灸方案。</p></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== 页脚：免责声明 + 站内链接 ===== -->
+<footer class="footer">
+  <div class="wrap">
+    <div>
+      <div class="brand" style="margin-bottom:10px"><span class="badge">扶</span><span>南宁扶阳中医馆</span></div>
+      <p class="copy">广西郑钦安扶阳医学研究中心 · 学术立馆 · 全自费精品诊疗</p>
+    </div>
+    <div class="links">
+      <a href="../index.html">首页</a>
+      <a href="../sleep.html">睡眠门诊</a>
+      <a href="../metabolism.html">代谢门诊</a>
+      <a href="../mens.html">男科门诊</a>
+      <a href="../blog/fuyang-school.html">什么是扶阳学派</a>
+      <a href="../blog/yangxu-tizhi.html">阳虚体质怎么调理</a>
+      <a href="../blog/nanning-damp-heat.html">南宁湿热与扶阳</a>
+    </div>
+  </div>
+  <div class="wrap">
+    <p style="text-align:center;font-size:12px;color:var(--text-faint);margin-top:12px">《中医诊所备案证》登记号：MAKGHJ6M-045010315D2182 · 资质可在国家卫健委政务服务平台查询（<a href="https://zwfw.nhc.gov.cn/cxx/" target="_blank" rel="noopener" style="color:var(--amber)">zwfw.nhc.gov.cn/cxx</a>）</p>
+    <p style="text-align:center;font-size:12px;color:var(--text-faint);margin-top:6px">ICP 备案：桂ICP备XXXXXXXX号（办理中） · <a href="../privacy.html" style="color:var(--amber)">隐私政策</a></p>
+    <p class="disclaimer">免责声明：本页面为科普与宣传用途，不构成任何形式的诊断、治疗建议或医疗承诺。具体辨证与调理方案，请以执业医师面诊结果为准。详细地址、路线与门诊时间以官方渠道公示为准。如有明显不适，请及时就医。</p>
+  </div>
+</footer>
+
+<script>
+// 滚动显示动画（仅 transform/opacity，符合主站动画约束）
+document.addEventListener('DOMContentLoaded', function(){
+  var els = document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){
+    els.forEach(function(e){e.classList.add('in')});
+    return;
+  }
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+  }, {threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+});
+// FAQ 手风琴
+document.querySelectorAll('.faq-item').forEach(function(item){
+  var q = item.querySelector('.faq-q');
+  q.addEventListener('click', function(){
+    document.querySelectorAll('.faq-item').forEach(function(o){ if(o!==item) o.classList.remove('open'); });
+    item.classList.toggle('open');
+  });
+});
+</script>
+<script>
+(function(){
+  var KEY='fy-theme';
+  var btn=document.getElementById('themeBtn');
+  function icon(light){var s=btn?btn.querySelector('svg'):null;if(!s)return;s.innerHTML=light?'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>':'<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>';}
+  function apply(t){document.documentElement.setAttribute('data-theme',t);icon(t==='light');}
+  if(btn)btn.addEventListener('click',function(){var t=document.documentElement.getAttribute('data-theme')==='light'?'dark':'light';apply(t);try{localStorage.setItem(KEY,t)}catch(e){}});
+  window.addEventListener('storage',function(e){if(e.key===KEY&&e.newValue)apply(e.newValue);});
+  apply(document.documentElement.getAttribute('data-theme')||'dark');
+})();
+</script>
+</body>
+</html>

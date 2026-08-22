@@ -1,0 +1,24 @@
+# 南宁扶阳中医馆 robots.txt
+# 允许全部收录，并显式放行主流 AI 生成式引擎爬虫（GEO 策略：不屏蔽 AI 抓取）
+
+User-agent: *
+Allow: /
+
+# AI 生成式引擎爬虫
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# 上线前取消注释并替换为真实域名
+# Sitemap: https://www.example.com/sitemap.xml

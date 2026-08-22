@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>什么是扶阳学派？| 南宁扶阳中医馆</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&display=swap" rel="stylesheet" />
+<meta name="description" content="什么是扶阳学派？本文讲清扶阳是什么、扶阳与普通中医的区别，梳理郑钦安、卢铸之、卢崇汉的师承脉络与阳主阴从理念。南宁扶阳中医馆科普内容，具体方案请以执业医师面诊辨证为准。" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23f2542d'/%3E%3Ctext x='16' y='23' font-size='20' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='%23ffffff'%3E%E6%89%B6%3C/text%3E%3C/svg%3E" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"什么是扶阳学派？","inLanguage":"zh-CN","author":{"@type":"Organization","name":"南宁扶阳中医馆"},"publisher":{"@type":"Organization","name":"南宁扶阳中医馆","alternateName":"广西郑钦安扶阳医学研究中心"},"about":["扶阳学派","郑钦安","卢铸之","卢崇汉","阳主阴从"],"articleSection":"中医科普","description":"从郑钦安到卢铸之、卢崇汉，一文讲清扶阳学派是什么、核心理念与常见误解。"}
+</script>
+<script>(function(){try{var t=localStorage.getItem('fy-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<style>
+/* ============ Design Tokens（与主站 index.html 一致：朱红 + 暖金，深色主题） ============ */
+:root{
+  --bg:#0a0b0d;
+  --bg-2:#0e1014;
+  --glass:rgba(255,255,255,0.05);
+  --glass-2:rgba(255,255,255,0.08);
+  --hairline:rgba(255,255,255,0.10);
+  --hairline-soft:rgba(255,255,255,0.06);
+  --text:rgba(255,255,255,0.92);
+  --text-dim:rgba(255,255,255,0.62);
+  --text-faint:rgba(255,255,255,0.55);
+  --red:#f2542d;        /* 主色 · 朱红 */
+  --red-2:#d63a1f;
+  --amber:#f3b15f;      /* 辅助色 · 暖金 */
+  --r-sm:12px;
+  --r:18px;
+  --r-lg:28px;
+  --maxw:1180px;
+  --font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei',system-ui,sans-serif;
+  --font-serif:'Noto Serif SC','Songti SC',STSong,'Times New Roman',serif;
+  --font-mono:'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Code','Roboto Mono',monospace;
+  --shadow:0 18px 50px -20px rgba(0,0,0,0.7);
+  --card-hi:inset 0 1px 0 rgba(255,255,255,.055);
+  color-scheme:dark;
+}
+html[data-theme="light"]{
+  --bg:#f3efe9;--bg-2:#efe8df;
+  --glass:rgba(255,255,255,0.55);--glass-2:rgba(255,255,255,0.72);
+  --hairline:rgba(30,22,12,0.12);--hairline-soft:rgba(30,22,12,0.07);
+  --text:rgba(28,22,14,0.92);--text-dim:rgba(28,22,14,0.68);--text-faint:rgba(28,22,14,0.66);
+  --red:#d8401f;--red-2:#c0341a;--amber:#cf7a26;
+  --shadow:0 18px 50px -24px rgba(80,55,20,0.45);
+  --card-hi:inset 0 1px 0 rgba(255,255,255,.6);
+  color-scheme:light;
+}
+
+/* ============ Reset ============ */
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font-sans);
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.8;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+body::before{
+  content:"";
+  position:fixed;inset:0;z-index:-2;
+  background:
+    radial-gradient(1100px 700px at 78% -8%, rgba(242,84,45,0.16), transparent 60%),
+    radial-gradient(900px 700px at 8% 18%, rgba(243,177,95,0.12), transparent 60%),
+    linear-gradient(180deg,var(--bg),var(--bg-2));
+}
+a{color:inherit;text-decoration:none}
+.mono{font-family:var(--font-mono)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+section{position:relative}
+
+/* ============ Nav（与主站玻璃导航一致） ============ */
+.nav{
+  position:fixed;top:14px;left:0;right:0;z-index:100;
+  display:flex;justify-content:center;
+  padding:0 14px;
+}
+.nav-inner{
+  width:100%;max-width:var(--maxw);
+  display:flex;align-items:center;gap:18px;
+  padding:10px 14px 10px 18px;
+  background:var(--glass);
+  backdrop-filter:blur(24px) saturate(150%);
+  -webkit-backdrop-filter:blur(24px) saturate(150%);
+  border:1px solid var(--hairline);
+  border-radius:var(--r-lg);
+  box-shadow:var(--card-hi),var(--shadow);
+}
+.brand{display:flex;align-items:center;gap:12px;font-weight:600;letter-spacing:.2px}
+.brand .badge{
+  width:38px;height:38px;border-radius:12px;flex:none;
+  display:grid;place-items:center;
+  font-size:20px;font-weight:700;color:#fff;
+  background:linear-gradient(135deg,var(--red),var(--red-2));
+  box-shadow:0 6px 18px -6px rgba(214,58,31,.55);
+}
+.brand .name{font-size:15px;line-height:1.15;color:#fff}
+.brand .name small{display:block;font-size:11px;color:var(--text-dim);font-weight:500;letter-spacing:.4px}
+.nav-back{
+  margin-left:auto;display:inline-flex;align-items:center;gap:8px;
+  padding:9px 16px;border-radius:12px;font-size:13.5px;font-weight:600;
+  color:#1a1206;
+  background:linear-gradient(180deg,rgba(255,255,255,.16),rgba(255,255,255,0) 46%),linear-gradient(135deg,var(--red),var(--red-2));
+  transition:transform .25s ease,box-shadow .25s ease;
+  box-shadow:var(--card-hi),0 8px 22px -10px rgba(214,58,31,.6);
+}
+.nav-back:hover{transform:translateY(-2px)}
+.nav-back svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* ============ Article ============ */
+.article{padding:150px 0 70px;content-visibility:auto;contain-intrinsic-size:auto 800px}
+.article-inner{max-width:760px;margin:0 auto}
+.pill{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:7px 14px;border-radius:999px;font-size:12.5px;color:var(--text-dim);
+  background:var(--glass);border:1px solid var(--hairline);
+}
+.pill .dot{width:7px;height:7px;border-radius:50%;background:var(--amber);box-shadow:0 0 10px var(--amber)}
+.eyebrow{font-family:var(--font-mono);font-size:12.5px;letter-spacing:2px;text-transform:uppercase;color:var(--red);margin-top:26px}
+.article h1{
+  font-size:clamp(30px,4.6vw,46px);line-height:1.18;font-weight:800;letter-spacing:-.5px;
+  margin:16px 0 14px;
+}
+.article .grad{
+  background:linear-gradient(120deg,var(--red),var(--amber));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.article .lead{font-size:16.5px;color:var(--text-dim);max-width:640px}
+.article .meta{
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  margin-top:22px;padding:14px 0;border-top:1px solid var(--hairline-soft);border-bottom:1px solid var(--hairline-soft);
+  font-size:13px;color:var(--text-faint);
+}
+.article .meta .sep{width:3px;height:3px;border-radius:50%;background:var(--hairline)}
+
+.prose{padding-top:14px}
+.prose h2{
+  font-size:clamp(21px,2.8vw,26px);font-weight:800;letter-spacing:-.3px;
+  margin:44px 0 14px;line-height:1.3;color:#fff;
+}
+.prose h2::before{
+  content:"";display:inline-block;vertical-align:middle;
+  width:8px;height:22px;border-radius:4px;margin-right:12px;
+  background:linear-gradient(180deg,var(--red),var(--amber));
+}
+.prose p{margin:0 0 16px;color:var(--text)}
+.prose strong{color:var(--amber);font-weight:700}
+.prose blockquote{
+  margin:22px 0;padding:18px 22px;border-left:3px solid var(--red);
+  border-radius:0 var(--r) var(--r) 0;
+  background:var(--glass);border:1px solid var(--hairline);border-left-width:3px;border-left-color:var(--red);
+  color:var(--text-dim);font-size:15px;
+}
+.prose blockquote b{color:var(--amber);font-weight:700}
+
+/* 源流传承时间线 */
+.timeline{margin:22px 0 8px;display:flex;flex-direction:column;gap:12px}
+.timeline .tl-item{
+  display:flex;gap:14px;align-items:flex-start;
+  padding:16px 18px;border-radius:var(--r);background:var(--glass);border:1px solid var(--hairline);
+}
+.tl-item .tl-badge{
+  width:38px;height:38px;border-radius:12px;flex:none;
+  display:grid;place-items:center;font-size:15px;font-weight:800;color:#fff;
+  background:linear-gradient(135deg,var(--red),var(--red-2));
+  box-shadow:0 6px 18px -6px rgba(214,58,31,.55);
+}
+.tl-item .tl-body b{display:block;font-size:15.5px;color:#fff;margin-bottom:3px}
+.tl-item .tl-body .tl-sub{font-family:var(--font-mono);font-size:12px;color:var(--amber);letter-spacing:.5px}
+.tl-item .tl-body p{font-size:14px;color:var(--text-dim);margin:6px 0 0}
+
+/* 对比卡 */
+.combo{
+  display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:22px 0;
+}
+.combo .c{
+  padding:18px 20px;border-radius:var(--r);background:var(--glass);border:1px solid var(--hairline);
+}
+.combo .c b{display:block;font-size:15px;color:var(--amber);margin-bottom:6px}
+.combo .c p{font-size:14px;color:var(--text-dim);margin:0}
+
+/* 误解清单 */
+.myth{padding:16px 20px;border-radius:var(--r);background:var(--glass);border:1px solid var(--hairline);margin-bottom:12px}
+.myth .m-title{display:flex;align-items:baseline;gap:10px;font-size:15.5px;font-weight:700;color:#fff;margin-bottom:6px}
+.myth .m-title .no{font-family:var(--font-mono);font-size:13px;color:var(--red);font-weight:800}
+.myth p{font-size:14.5px;color:var(--text-dim);margin:0}
+
+/* 关于本站 */
+.about-card{
+  margin-top:56px;padding:28px;border-radius:var(--r-lg);
+  background:var(--glass);border:1px solid var(--hairline);
+}
+.about-card h2{font-size:20px;font-weight:800;margin-bottom:12px;color:#fff}
+.about-card h2::before{
+  content:"";display:inline-block;vertical-align:middle;
+  width:8px;height:20px;border-radius:4px;margin-right:12px;
+  background:linear-gradient(180deg,var(--red),var(--amber));
+}
+.about-card p{font-size:14.5px;color:var(--text-dim);margin-bottom:12px}
+.about-card .note{
+  padding:14px 16px;border-radius:var(--r-sm);font-size:13.5px;
+  background:rgba(243,177,95,0.08);border:1px solid rgba(243,177,95,0.28);color:var(--amber);
+}
+
+/* ============ Footer（与主站一致） ============ */
+.footer{padding:70px 0 36px;margin-top:60px;border-top:1px solid var(--hairline-soft)}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:36px;margin-bottom:40px}
+.foot-brand .brand{margin-bottom:14px}
+.foot-brand p{color:var(--text-dim);font-size:14px;max-width:360px}
+.foot-col h4{font-size:14px;font-weight:700;margin-bottom:14px;letter-spacing:.3px}
+.foot-links{display:flex;flex-wrap:wrap;gap:8px 14px;max-width:420px}
+.foot-links a{display:inline-flex;align-items:center;gap:6px;color:var(--text-dim);font-size:13.5px;padding:4px 0;transition:color .25s ease,transform .25s ease}
+.foot-links a:hover{color:var(--text);transform:translateX(3px)}
+.foot-links a svg{width:14px;height:14px;stroke:var(--amber);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:24px;border-top:1px solid var(--hairline-soft);color:var(--text-faint);font-size:12.5px}
+.disclaimer{font-size:12px;color:var(--text-faint);max-width:800px;margin-top:10px;line-height:1.7}
+
+@media (max-width:720px){
+  .brand .name small{display:none}
+  .nav-back span{display:none}
+  .nav-back{padding:9px 12px}
+  .combo{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+}
+h1,h2{font-family:var(--font-serif)}
+</style>
+<meta property="og:image" content="../assets/images/heritage.png" />
+<!-- TODO: 上线后替换为绝对地址 https://域名/../assets/images/heritage.png -->
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" aria-label="主导航">
+  <div class="nav-inner">
+    <a class="brand" href="../index.html" title="返回南宁扶阳中医馆首页">
+      <span class="badge">扶</span>
+      <span class="name">南宁扶阳中医馆<small>广西郑钦安扶阳医学研究中心</small></span>
+    </a>
+    <a class="nav-back" href="../index.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      <span>返回首页</span>
+    </a>
+<button id="themeBtn" aria-label="切换亮暗主题" title="切换亮暗主题" style="width:44px;height:44px;border-radius:13px;flex:none;margin-left:auto;display:grid;place-items:center;border:1px solid var(--hairline);background:var(--glass);cursor:pointer">
+      <svg viewBox="0 0 24 24" style="width:17px;height:17px;stroke:var(--text-dim);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- ============ ARTICLE ============ -->
+<main class="article" id="top">
+  <div class="wrap">
+    <div class="article-inner">
+
+      <span class="pill"><span class="dot"></span>中医科普 · 学术传承</span>
+      <div class="eyebrow mono">Fuyang School · 扶阳学派</div>
+
+      <h1>什么是<span class="grad">扶阳学派</span>？</h1>
+      <p class="lead">从郑钦安到卢铸之、卢崇汉，一百多年师承脉络下的中医学术流派。这篇用通俗的话，讲清扶阳是什么、它和普通中医有什么不同。</p>
+
+      <div class="meta">
+        <span>南宁扶阳中医馆</span>
+        <span class="sep"></span>
+        <span>科普专栏 · 第 1 篇</span>
+        <span class="sep"></span>
+        <span>约 10 分钟阅读</span>
+      </div>
+
+      <div class="prose">
+
+        <h2>扶阳学派是什么</h2>
+        <p>扶阳学派，是中医诸多学术流派中重视阳气、主张以温煦与固护阳气为诊治之本的学派。简单说，<strong>扶阳就是扶持、保护人体的阳气</strong>，通过恢复阳气的主导作用来调和阴阳、改善机能。它不是在中医体系之外另起炉灶，而是在辨证论治框架下的一种鲜明学术主张。</p>
+        <blockquote>一句话理解：扶阳学派认为阳气是人体的立命之本，看病调养先看阳气足不足，该扶则扶、该护则护。</blockquote>
+
+        <h2>学派源流：郑钦安、卢铸之、卢崇汉</h2>
+        <p>扶阳学派的学术源头，公认始于晚清四川名医<strong>郑钦安</strong>（1824年至1911年）。他精研《伤寒论》，著有《医理真传》《医法圆通》《伤寒恒论》，以扶阳抑阴立论，被后世称为火神派的奠基人。他的著作流传极广，至今仍是学习扶阳学术的入门必读。</p>
+        <div class="timeline">
+          <div class="tl-item">
+            <span class="tl-badge">郑</span>
+            <div class="tl-body">
+              <b>郑钦安</b>
+              <span class="tl-sub">晚清 · 1824-1911</span>
+              <p>著有《医理真传》《医法圆通》《伤寒恒论》，提出扶阳抑阴、重视元阳，为扶阳学派的学术奠基人。</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <span class="tl-badge">卢</span>
+            <div class="tl-body">
+              <b>卢铸之</b>
+              <span class="tl-sub">近代 · 1876-1963</span>
+              <p>郑钦安弟子，提出人生立命在于以火立极、治病立法在于以火消阴，将扶阳发展为完整理法，开创卢氏医学。</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <span class="tl-badge">卢</span>
+            <div class="tl-body">
+              <b>卢崇汉</b>
+              <span class="tl-sub">当代 · 1947年出生</span>
+              <p>卢铸之嫡孙，著有《扶阳讲记》等，是当代扶阳学派的重要代表性医家。</p>
+            </div>
+          </div>
+        </div>
+        <p>从郑钦安到卢崇汉，师承脉络绵延一百多年，是真实可考的历史源流。</p>
+
+        <h2>核心理念：阳主阴从、护阳固本</h2>
+        <p>扶阳学派的核心观点，可以概括为<strong>阳主阴从</strong>。古人常用火来比喻阳气：饮食运化、气血运行、精神振奋，都离不开阳气的推动与温煦，就像万物生长离不开阳光。护住阳气，身体才有自我修复的基础。</p>
+        <p>落实到诊疗上，扶阳思路重视两点。一是<strong>护阳</strong>，无论用药、针灸还是艾灸，都注意避免过度耗伤阳气；二是<strong>固本</strong>，通过扶助阳气带动全身机能的恢复。中医馆里常见的艾灸、温针，正是扶阳思路在日常调理中的体现。</p>
+
+        <h2>扶阳与普通中医有何不同</h2>
+        <p>需要先说明：扶阳并非与普通中医对立。所有中医都讲辨证论治、调和阴阳，扶阳学派的特点在于<strong>侧重不同</strong>。它在辨证时更关注阳气是否虚衰、寒邪是否偏盛，立法时更倾向于温阳扶正。</p>
+        <div class="combo">
+          <div class="c">
+            <b>滋阴清热思路</b>
+            <p>侧重补养阴液、清除内热，多用于阴虚、内热明显的体质与证候。</p>
+          </div>
+          <div class="c">
+            <b>扶阳温煦思路</b>
+            <p>侧重温煦阳气、化解寒凝，多用于阳气不足、寒湿偏盛的证候。</p>
+          </div>
+        </div>
+        <p>两者面对的病机不同，方法各有所长，并无高下之分。真正的中医诊断，从来都是四诊合参、随证而变，而不是执着于某一种固定思路。</p>
+
+        <h2>关于扶阳的常见误解</h2>
+        <div class="myth">
+          <div class="m-title"><span class="no">误解一</span>扶阳等于盲目温补？</div>
+          <p>并非如此。扶阳讲究辨证，同样是阳虚，程度、部位不同，用药轻重完全不同，不是一味堆砌温燥之药。</p>
+        </div>
+        <div class="myth">
+          <div class="m-title"><span class="no">误解二</span>人人都需要温阳？</div>
+          <p>这不符合事实。阳虚只是诸多体质类型之一，阴虚、湿热、瘀血等体质并不少见，不论体质一律温阳，反而可能助火伤阴。扶阳的前提，是面诊辨证确认确属阳气不足。</p>
+        </div>
+        <div class="myth">
+          <div class="m-title"><span class="no">误解三</span>扶阳方剂都含附子？</div>
+          <p>附子只是扶阳常用药之一，是否使用、用量多少由医师据病情把握。手段也不限于中药，针灸、艾灸、膏方等都可在辨证基础上配合使用。</p>
+        </div>
+        <p>理解扶阳，关键记住八个字：<strong>辨证为先，护阳为本。</strong></p>
+        <blockquote>本文为科普内容，具体体质与调理方案请以执业医师面诊辨证为准。</blockquote>
+
+        <!-- ============ ABOUT ============ -->
+        <div class="about-card" id="about">
+          <h2>关于本站</h2>
+          <p>本站为<strong>南宁扶阳中医馆</strong>（广西郑钦安扶阳医学研究中心）的官方科普博客。医馆位于南宁市青秀区，设睡眠障碍、代谢疾病、男科康复三大专病门诊，提供针灸、艾灸、中药调理与膏方等服务，全自费运营、费用明码标价。</p>
+          <p>本栏目用于中医知识与学术传承的科普教育，帮助大家客观了解扶阳学术。科普内容不替代面诊，如有健康疑问，欢迎到馆由执业医师辨证评估。</p>
+          <p class="note">温馨提示：本站所有科普文章仅作知识分享，不构成诊断与治疗建议。</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="../index.html">
+          <span class="badge">扶</span>
+          <span class="name">南宁扶阳中医馆<small>广西郑钦安扶阳医学研究中心</small></span>
+        </a>
+        <p>扶阳固本、阴阳同调、内外同治。专注睡眠障碍、代谢疾病、男科康复三大专病门诊。</p>
+      </div>
+      <div class="foot-col">
+        <h4>站内导航</h4>
+        <div class="foot-links">
+          <a href="../index.html"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>返回首页</a>
+          <a href="../visit.html"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>到院指南</a>
+          <a href="../sleep.html"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17 11h-10v6a5 5 0 0 0 10 0z"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>睡眠门诊</a>
+          <a href="../metabolism.html"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><path d="M12 3a9 9 0 1 0 9 9"/></svg>代谢门诊</a>
+          <a href="../mens.html"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><path d="M12 3a9 9 0 1 0 9 9"/></svg>男科门诊</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 南宁扶阳中医馆 · 广西郑钦安扶阳医学研究中心　保留所有权利</span>
+      <span class="mono">扶阳固本 · 阴阳同调 · 内外同治</span>
+    </div>
+    <p style="text-align:center;font-size:12px;color:var(--text-faint);margin-top:12px">《中医诊所备案证》登记号：MAKGHJ6M-045010315D2182 · 资质可在国家卫健委政务服务平台查询（<a href="https://zwfw.nhc.gov.cn/cxx/" target="_blank" rel="noopener" style="color:var(--amber)">zwfw.nhc.gov.cn/cxx</a>）</p>
+    <p style="text-align:center;font-size:12px;color:var(--text-faint);margin-top:6px">ICP 备案：桂ICP备XXXXXXXX号（办理中） · <a href="../privacy.html" style="color:var(--amber)">隐私政策</a></p>
+    <p class="disclaimer">免责声明：本文为科普内容，不构成诊断与治疗建议，具体以执业医师面诊为准。本网站所有文章仅供科普与宣传之用，如有明显不适，请及时就医。</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var KEY='fy-theme';
+  var btn=document.getElementById('themeBtn');
+  function icon(light){var s=btn?btn.querySelector('svg'):null;if(!s)return;s.innerHTML=light?'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>':'<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>';}
+  function apply(t){document.documentElement.setAttribute('data-theme',t);icon(t==='light');}
+  if(btn)btn.addEventListener('click',function(){var t=document.documentElement.getAttribute('data-theme')==='light'?'dark':'light';apply(t);try{localStorage.setItem(KEY,t)}catch(e){}});
+  window.addEventListener('storage',function(e){if(e.key===KEY&&e.newValue)apply(e.newValue);});
+  apply(document.documentElement.getAttribute('data-theme')||'dark');
+})();
+</script>
+</body>
+</html>

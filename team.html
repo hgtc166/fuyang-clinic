@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>主诊团队 · 黎军宏博士 | 南宁扶阳中医馆</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&display=swap" rel="stylesheet" />
+<meta name="description" content="南宁扶阳中医馆主诊医师黎军宏博士，南宁中医博士、副教授、扶阳学派传人，以扶阳辨证思路调理失眠、代谢与男科相关问题。一对一私密面诊，名中医预约以官方渠道为准。" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23f2542d'/%3E%3Ctext x='16' y='23' font-size='20' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='%23ffffff'%3E%E6%89%B6%3C/text%3E%3C/svg%3E" />
+<!-- ===== 结构化数据：Physician 实体 + FAQPage 三问 ===== -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Physician","name":"黎军宏","honorificSuffix":"博士","jobTitle":"副教授","medicalSpecialty":"中医内科学","worksFor":{"@type":"MedicalOrganization","name":"南宁扶阳中医馆"},"knowsAbout":["扶阳学派","睡眠障碍","代谢性疾病","男科康复"]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"黎军宏博士擅长什么？","acceptedAnswer":{"@type":"Answer","text":"黎军宏博士为中医内科学博士、副教授、扶阳学派传人，主理睡眠障碍、代谢性疾病与男科康复三大专病方向，以扶阳辨证思路结合四诊合参，制定个体化调理方案。"}},
+{"@type":"Question","name":"如何预约黎军宏博士出诊？","acceptedAnswer":{"@type":"Answer","text":"出诊安排以官方渠道与馆内公示为准。可拨打 18878669106 或通过官方公众号、微信小程序预约，具体出诊时间请以官方渠道与馆内公示为准。"}},
+{"@type":"Question","name":"医师资质如何核实？","acceptedAnswer":{"@type":"Answer","text":"资质可通过官方渠道及馆内公示核实。黎军宏博士的博士、副教授、扶阳学派传人等学术信息均为真实可查信息，医师执业信息与出诊安排以馆内公示为准。"}}]}
+</script>
+<script>(function(){try{var t=localStorage.getItem('fy-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<style>
+/* ===== 设计令牌（与主站 index.html 完全一致：朱红+暖金、深色为主、Inter 字体栈） ===== */
+:root{
+  --bg:#0a0b0d;--bg-2:#0e1014;
+  --glass:rgba(255,255,255,0.05);--glass-2:rgba(255,255,255,0.08);
+  --hairline:rgba(255,255,255,0.10);--hairline-soft:rgba(255,255,255,0.06);
+  --text:rgba(255,255,255,0.92);--text-dim:rgba(255,255,255,0.62);--text-faint:rgba(255,255,255,0.55);
+  --red:#f2542d;--red-2:#d63a1f;--amber:#f3b15f;
+  --r-sm:12px;--r:18px;--r-lg:28px;--maxw:1180px;
+  --font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei',system-ui,sans-serif;
+  --font-serif:'Noto Serif SC','Songti SC',STSong,'Times New Roman',serif;
+  --font-mono:'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Code','Roboto Mono',monospace;
+  --shadow:0 18px 50px -20px rgba(0,0,0,0.7);
+  --card-hi:inset 0 1px 0 rgba(255,255,255,.055);
+  color-scheme:dark;
+}
+html[data-theme="light"]{
+  --bg:#f3efe9;--bg-2:#efe8df;
+  --glass:rgba(255,255,255,0.55);--glass-2:rgba(255,255,255,0.72);
+  --hairline:rgba(30,22,12,0.12);--hairline-soft:rgba(30,22,12,0.07);
+  --text:rgba(28,22,14,0.92);--text-dim:rgba(28,22,14,0.68);--text-faint:rgba(28,22,14,0.66);
+  --red:#d8401f;--red-2:#c0341a;--amber:#cf7a26;
+  --shadow:0 18px 50px -24px rgba(80,55,20,0.45);
+  --card-hi:inset 0 1px 0 rgba(255,255,255,.6);
+  color-scheme:light;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-sans);background:var(--bg);color:var(--text);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(1100px 700px at 78% -8%, rgba(242,84,45,0.16), transparent 60%),radial-gradient(900px 700px at 8% 18%, rgba(243,177,95,0.12), transparent 60%),linear-gradient(180deg,var(--bg),var(--bg-2))}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+
+/* ===== 顶部导航 ===== */
+.nav{position:fixed;top:14px;left:0;right:0;z-index:100;display:flex;justify-content:center;padding:0 14px}
+.nav-inner{width:100%;max-width:var(--maxw);display:flex;align-items:center;gap:18px;padding:10px 14px 10px 18px;background:var(--glass);backdrop-filter:blur(24px) saturate(150%);-webkit-backdrop-filter:blur(24px) saturate(150%);border:1px solid var(--hairline);border-radius:var(--r-lg);box-shadow:var(--card-hi),var(--shadow)}
+.brand{display:flex;align-items:center;gap:12px;font-weight:600}
+.brand .badge{width:38px;height:38px;border-radius:12px;flex:none;display:grid;place-items:center;font-size:20px;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--red),var(--red-2));box-shadow:0 6px 18px -6px rgba(214,58,31,.55)}
+.nav-links{display:flex;gap:4px;margin-left:auto;align-items:center}
+.nav-links a{padding:8px 13px;border-radius:10px;font-size:14px;color:var(--text-dim);transition:color .25s ease,background .25s ease}
+.nav-links a:hover{color:var(--text);background:var(--glass-2)}
+.nav-links a.active{color:var(--text);background:var(--glass-2);font-weight:600}
+
+/* ===== Hero ===== */
+.hero{padding:150px 0 46px;text-align:center}
+.eyebrow{display:inline-block;font-family:var(--font-mono);font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--red);border:1px solid var(--hairline);background:var(--glass);padding:7px 14px;border-radius:99px;margin-bottom:20px}
+.hero h1{font-size:clamp(34px,5vw,52px);font-weight:800;letter-spacing:-.5px;line-height:1.12;margin:14px 0 18px}
+.hero p{color:var(--text-dim);font-size:17px;max-width:640px;margin:0 auto}
+
+/* ===== 区块 ===== */
+.sec{padding:56px 0}
+.sec-head{text-align:center;margin-bottom:38px}
+.sec-head h2{font-size:clamp(26px,3.4vw,38px);font-weight:800;letter-spacing:-.3px;margin:14px 0 12px}
+.sec-head h2::after{content:"";display:block;width:56px;height:3px;margin:16px auto 0;border-radius:99px;background:linear-gradient(90deg,var(--red),var(--amber))}
+.sec-head p{color:var(--text-dim);font-size:15.5px}
+
+/* ===== 位置与交通 ===== */
+.loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:stretch}
+.info-card{padding:30px;border-radius:var(--r-lg);background:var(--glass);border:1px solid var(--hairline);box-shadow:var(--card-hi)}
+.info-card h3{font-size:20px;font-weight:800;margin-bottom:18px}
+.info-row{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--hairline-soft)}
+.info-row:last-of-type{border-bottom:none}
+.info-row .ic{width:40px;height:40px;border-radius:11px;flex:none;display:grid;place-items:center;background:var(--glass-2);border:1px solid var(--hairline-soft)}
+.info-row .ic svg{width:19px;height:19px;stroke:var(--red);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.info-row b{display:block;font-size:14px}
+.info-row span{font-size:13.5px;color:var(--text-dim)}
+.map-card{border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--hairline);background:var(--glass);position:relative;min-height:300px;display:grid;place-items:center}
+.map-card svg{width:100%;height:300px;display:block}
+.map-card .pin-label{position:absolute;left:50%;top:50%;transform:translate(-50%,-150%);background:var(--glass-2);border:1px solid var(--hairline);padding:8px 14px;border-radius:12px;font-size:13px;backdrop-filter:blur(10px);white-space:nowrap}
+.map-note{position:absolute;left:0;right:0;bottom:0;text-align:center;padding:10px;font-size:12px;color:var(--text-faint);background:linear-gradient(transparent,rgba(10,11,13,.85))}
+
+/* ===== 首诊流程 4 步 ===== */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.step{padding:26px 22px;border-radius:var(--r);background:var(--glass);border:1px solid var(--hairline);box-shadow:var(--card-hi);position:relative}
+.step .no{font-family:var(--font-mono);font-size:12px;letter-spacing:1.5px;color:var(--amber);margin-bottom:12px}
+.step h4{font-size:16.5px;font-weight:700;margin-bottom:8px}
+.step p{font-size:13.5px;color:var(--text-dim);line-height:1.7}
+
+/* ===== FAQ（手风琴，与主站一致） ===== */
+.faq{max-width:760px;margin:0 auto;display:grid;gap:12px}
+.faq-item{border-radius:var(--r);background:var(--glass);border:1px solid var(--hairline);overflow:hidden;box-shadow:var(--card-hi)}
+.faq-q{width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 22px;font-size:16px;font-weight:600;text-align:left}
+.faq-q svg{width:20px;height:20px;stroke:var(--text-dim);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .35s ease;flex:none}
+.faq-item.open .faq-q svg{transform:rotate(180deg);stroke:var(--red)}
+.faq-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s cubic-bezier(.22,1,.36,1)}
+.faq-item.open .faq-panel{grid-template-rows:1fr}
+.faq-panel>div{overflow:hidden}
+.faq-a{padding:0 22px 20px;font-size:14.5px;color:var(--text-dim);line-height:1.8;opacity:0;transform:translateY(-6px);transition:opacity .3s ease,transform .3s ease}
+.faq-item.open .faq-a{opacity:1;transform:none}
+
+/* ===== 页脚 ===== */
+.footer{border-top:1px solid var(--hairline);padding:40px 0 56px;margin-top:30px}
+.footer .wrap{display:flex;flex-wrap:wrap;gap:26px;justify-content:space-between;align-items:center}
+.footer .links{display:flex;flex-wrap:wrap;gap:18px;font-size:14px;color:var(--text-dim)}
+.footer .links a:hover{color:var(--text)}
+.footer .copy{font-size:12.5px;color:var(--text-faint)}
+.disclaimer{margin-top:18px;font-size:12px;color:var(--text-faint);line-height:1.8}
+
+/* ===== Reveal 动画（仅 transform/opacity） ===== */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* ===== 响应式 ===== */
+@media (max-width:900px){
+  .loc-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:680px){
+  .nav-links a{font-size:13px;padding:7px 9px}
+  .hero{padding:126px 0 40px}
+  .steps{grid-template-columns:1fr}
+  .info-card{padding:24px}
+  .sec{padding:44px 0}
+}
+
+/* ===== 主诊医师卡（团队页专属，设计语言与主站一致） ===== */
+.doc-card{max-width:920px;margin:0 auto;padding:34px;border-radius:var(--r-lg);background:var(--glass);border:1px solid var(--hairline);box-shadow:var(--card-hi)}
+.doc-head{display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap}
+.doc-avatar{width:92px;height:92px;border-radius:24px;flex:none;display:grid;place-items:center;font-size:38px;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--red),var(--red-2));box-shadow:0 10px 26px -10px rgba(214,58,31,.55)}
+.doc-info{flex:1;min-width:240px}
+.doc-info h3{font-size:26px;font-weight:800;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.doc-degree{font-size:14px;font-weight:700;color:var(--amber);background:var(--glass-2);border:1px solid var(--hairline-soft);padding:3px 10px;border-radius:99px}
+.doc-role{font-size:13px;color:var(--text-dim);margin:10px 0 14px;line-height:1.7}
+.doc-tags{display:flex;flex-wrap:wrap;gap:8px}
+.doc-tag{font-size:12.5px;color:var(--text-dim);padding:6px 13px;border-radius:99px;background:var(--glass-2);border:1px solid var(--hairline-soft)}
+.doc-body{margin-top:26px}
+.doc-body h4{font-size:15.5px;font-weight:800;margin-bottom:12px}
+.lineage{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:0}
+.ln{padding:12px 18px;min-width:110px;border-radius:var(--r);background:var(--glass-2);border:1px solid var(--hairline-soft);text-align:center}
+.ln b{display:block;font-size:15px;font-weight:700}
+.ln span{font-size:12px;color:var(--text-dim)}
+.ln-cur{border-color:rgba(242,84,45,.45);background:linear-gradient(135deg,rgba(242,84,45,.14),rgba(243,177,95,.08))}
+.ln-arrow{color:var(--red);font-size:15px;padding:0 8px}
+.spec-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+.spec{padding:18px;border-radius:var(--r);background:var(--glass-2);border:1px solid var(--hairline-soft)}
+.spec b{display:block;font-size:15px;margin-bottom:6px}
+.spec span{display:block;font-size:12.5px;color:var(--text-dim);line-height:1.7}
+.doc-desc{margin-top:20px;font-size:14px;color:var(--text-dim);line-height:1.8}
+.note{font-size:12.5px;color:var(--text-faint);line-height:1.8;border-top:1px solid var(--hairline-soft);margin-top:22px;padding-top:16px}
+
+/* ===== 学术与临床（团队页专属） ===== */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.split-card{padding:30px;border-radius:var(--r-lg);background:var(--glass);border:1px solid var(--hairline);box-shadow:var(--card-hi)}
+.split-card h3{font-size:19px;font-weight:800;margin-bottom:12px}
+.split-card p{font-size:14px;color:var(--text-dim);line-height:1.8}
+.split-card ul{margin:10px 0 0;padding-left:18px;font-size:13.5px;color:var(--text-dim);line-height:1.9}
+
+@media(max-width:900px){
+  .split{grid-template-columns:1fr}
+  .spec-list{grid-template-columns:1fr}
+}
+@media(max-width:680px){
+  .doc-card{padding:24px}
+  .doc-head{flex-direction:column}
+  .lineage{flex-direction:column}
+  .ln-arrow{transform:rotate(90deg);padding:2px 0}
+}
+h1,h2{font-family:var(--font-serif)}
+</style>
+<meta property="og:image" content="assets/images/heritage.png" />
+<!-- TODO: 上线后替换为绝对地址 https://域名/assets/images/heritage.png -->
+</head>
+<body>
+
+<!-- ===== 顶部导航：链接指向各规划页面 ===== -->
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <span class="badge">扶</span>
+      <span>南宁扶阳中医馆</span>
+    </a>
+    <nav class="nav-links" aria-label="站内导航">
+      <a href="index.html">首页</a>
+      <a href="sleep.html">睡眠门诊</a>
+      <a href="metabolism.html">代谢门诊</a>
+      <a href="mens.html">男科门诊</a>
+      <a href="visit.html">到院指南</a>
+      <a href="team.html" class="active" aria-current="page">主诊团队</a>
+    </nav>
+<button id="themeBtn" aria-label="切换亮暗主题" title="切换亮暗主题" style="width:44px;height:44px;border-radius:13px;flex:none;margin-left:auto;display:grid;place-items:center;border:1px solid var(--hairline);background:var(--glass);cursor:pointer">
+      <svg viewBox="0 0 24 24" style="width:17px;height:17px;stroke:var(--text-dim);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- ===== Hero：主诊团队 ===== -->
+  <section class="hero wrap reveal">
+    <span class="eyebrow">Our Team</span>
+    <h1>主诊团队</h1>
+    <p>南宁扶阳中医馆主诊医师黎军宏博士，以扶阳辨证思路主理睡眠、代谢与男科三大专病门诊。医师执业信息与出诊安排以馆内公示为准。</p>
+  </section>
+
+  <!-- ===== 区块1：主诊医师卡（黎军宏博士） ===== -->
+  <section class="sec wrap">
+    <div class="sec-head reveal">
+      <h2>主诊医师</h2>
+      <p>黎军宏博士：中医内科学博士、副教授、扶阳学派传人，广西郑钦安扶阳医学研究中心学术成员。</p>
+    </div>
+    <div class="doc-card reveal">
+      <div class="doc-head">
+        <div class="doc-avatar">黎</div>
+        <div class="doc-info">
+          <h3>黎军宏 <span class="doc-degree">博士</span></h3>
+          <div class="doc-role">中医内科学博士 · 副教授 · 广西郑钦安扶阳医学研究中心学术成员</div>
+          <div class="doc-tags">
+            <span class="doc-tag">扶阳学派传人</span>
+            <span class="doc-tag">睡眠专病主诊</span>
+            <span class="doc-tag">代谢专病主诊</span>
+            <span class="doc-tag">男科专病主诊</span>
+          </div>
+        </div>
+      </div>
+      <div class="doc-body">
+        <h4>师承谱系</h4>
+        <div class="lineage">
+          <div class="ln"><b>郑钦安</b><span>扶阳奠基</span></div>
+          <span class="ln-arrow">→</span>
+          <div class="ln"><b>卢铸之</b><span>卢氏扶阳</span></div>
+          <span class="ln-arrow">→</span>
+          <div class="ln"><b>卢崇汉</b><span>当代传人</span></div>
+          <span class="ln-arrow">→</span>
+          <div class="ln ln-cur"><b>黎军宏</b><span>一脉传承</span></div>
+        </div>
+        <h4 style="margin-top:26px">专病方向</h4>
+        <div class="spec-list">
+          <div class="spec"><b>睡眠障碍</b><span>围绕失眠及合并睡眠问题的辨证调摄，安神与扶阳并举。</span></div>
+          <div class="spec"><b>代谢性疾病</b><span>聚焦肥胖、三高等代谢问题的中医综合管理与辨证调治。</span></div>
+          <div class="spec"><b>男科康复</b><span>以肾阳调理为纲，辨证调治男科相关问题。</span></div>
+        </div>
+        <p class="doc-desc">辨证特点：望闻问切、四诊合参，结合既往病历与体检报告，以个体化辨证思路制定调理方案，并按疗程复诊调方。</p>
+        <p class="note">以上学术信息均为真实可查信息。医师执业信息与出诊安排以馆内公示为准，预约请以官方渠道为准。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 区块2：学术与临床 ===== -->
+  <section class="sec wrap">
+    <div class="sec-head reveal">
+      <h2>学术与临床</h2>
+      <p>以学术研究支撑临床辨证：传承扶阳之学，深耕三大专病门诊。</p>
+    </div>
+    <div class="split">
+      <div class="split-card reveal">
+        <h3>扶阳学派传承</h3>
+        <p>医馆以郑钦安扶阳学派为学术根基，一脉相传、代有师承，学术研究与临床实践互证。</p>
+        <ul>
+          <li>扶阳学派师承脉络清晰，馆内可查</li>
+          <li>立足经典理论，重辨证、重阳气</li>
+          <li>学术交流与个案研究支撑临床决策</li>
+        </ul>
+      </div>
+      <div class="split-card reveal">
+        <h3>专病门诊实践</h3>
+        <p>睡眠、代谢、男科三大专病门诊，聚焦临床常见问题，辨证调治、按疗程管理。</p>
+        <ul>
+          <li>睡眠门诊：失眠及相关睡眠问题的辨证调摄</li>
+          <li>代谢门诊：肥胖、三高等代谢问题的中医综合管理</li>
+          <li>男科门诊：以肾阳调理为纲的辨证调治</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 区块3：就诊须知 ===== -->
+  <section class="sec wrap">
+    <div class="sec-head reveal">
+      <h2>就诊须知</h2>
+      <p>一对一私密面诊，方案与费用当面说明，就诊安排清晰透明。</p>
+    </div>
+    <div class="info-card reveal" style="max-width:760px;margin:0 auto">
+      <div class="info-row">
+        <div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg></div>
+        <div><b>面诊方式</b><span>一对一私密面诊，全程由执业医师主诊，沟通充分、安排从容</span></div>
+      </div>
+      <div class="info-row">
+        <div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></div>
+        <div><b>辨证方式</b><span>望闻问切、四诊合参，结合既往病历与体检报告制定个体化方案</span></div>
+      </div>
+      <div class="info-row">
+        <div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5h4a1.6 1.6 0 0 1 0 3.2h-3a1.6 1.6 0 0 0 0 3.2h4"/></svg></div>
+        <div><b>费用说明</b><span>方案与费用当面说明，明码标价、无隐性消费</span></div>
+      </div>
+      <div class="info-row">
+        <div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l8 3v6c0 4.5-3.2 7.6-8 9-4.8-1.4-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <div><b>资质公示</b><span>医师执业信息与出诊安排以馆内公示为准</span></div>
+      </div>
+      <div class="info-row">
+        <div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7-5.1-7-11a7 7 0 1 1 14 0c0 5.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></div>
+        <div><b>地址</b><span>南宁市青秀区怡心园A1栋403</span></div>
+      </div>
+      <div class="info-row">
+        <div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2z"/></svg></div>
+        <div><b>联系电话</b><span>18878669106</span></div>
+      </div>
+      <div class="info-row">
+        <div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+        <div><b>营业时间</b><span>周二至周日 10:00-18:00（具体以官方渠道公示为准）</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ：三问（与 JSON-LD 同步） ===== -->
+  <section class="sec wrap">
+    <div class="sec-head reveal">
+      <h2>常见问题</h2>
+      <p>关于主诊医师与预约就诊，这里一并说清楚。</p>
+    </div>
+    <div class="faq reveal" id="faqList">
+      <div class="faq-item">
+        <button class="faq-q">黎军宏博士擅长什么？<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="faq-panel"><div><p class="faq-a">黎军宏博士为中医内科学博士、副教授、扶阳学派传人，主理睡眠障碍、代谢性疾病与男科康复三大专病方向，以扶阳辨证思路结合四诊合参，制定个体化调理方案。</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">如何预约黎军宏博士出诊？<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="faq-panel"><div><p class="faq-a">出诊安排以官方渠道与馆内公示为准。可拨打 18878669106 或通过官方公众号、微信小程序预约，具体出诊时间请以官方渠道与馆内公示为准。</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">医师资质如何核实？<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="faq-panel"><div><p class="faq-a">资质可通过官方渠道及馆内公示核实。黎军宏博士的博士、副教授、扶阳学派传人等学术信息均为真实可查信息，医师执业信息与出诊安排以馆内公示为准。</p></div></div>
+      </div>
+    </div>
+  </section>
+<section class="sec" style="padding:40px 0">
+  <div class="wrap">
+    <div class="license-card" style="padding:22px 26px;border-radius:var(--r-lg);background:var(--glass);border:1px dashed rgba(242,84,45,.35)">
+      <h3 style="font-family:var(--font-serif);font-size:18px;font-weight:700;margin-bottom:12px">资质公示</h3>
+      <p style="color:var(--text-dim);font-size:14px;line-height:1.9">南宁扶阳中医馆持有《中医诊所备案证》依法执业。<br/>
+      · 备案编号：<b style="color:var(--text)">MAKGHJ6M-045010315D2182</b><br/>
+      · 证照原件于馆内公示，发证机关、诊疗科目与有效期以证照为准，欢迎现场查验。<br/>
+      · 主诊医师执业信息可在国家卫健委医师执业注册信息查询系统核实（zgcx.nhc.gov.cn）。</p>
+      <p style="margin-top:10px;font-size:13px;color:var(--text-dim)">资质核验：<a href="https://zwfw.nhc.gov.cn/cxx/" target="_blank" rel="noopener" style="color:var(--red);font-weight:600">国家卫健委政务服务平台（zwfw.nhc.gov.cn/cxx）</a></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== 页脚：免责声明 + 站内链接 ===== -->
+<footer class="footer">
+  <div class="wrap">
+    <div>
+      <div class="brand" style="margin-bottom:10px"><span class="badge">扶</span><span>南宁扶阳中医馆</span></div>
+      <p class="copy">广西郑钦安扶阳医学研究中心 · 学术立馆 · 全自费精品诊疗</p>
+    </div>
+    <div class="links">
+      <a href="index.html">首页</a>
+      <a href="sleep.html">睡眠门诊</a>
+      <a href="metabolism.html">代谢门诊</a>
+      <a href="mens.html">男科门诊</a>
+      <a href="blog/fuyang-school.html">什么是扶阳学派</a>
+      <a href="blog/yangxu-tizhi.html">阳虚体质怎么调理</a>
+      <a href="blog/nanning-damp-heat.html">南宁湿热与扶阳</a>
+    </div>
+  </div>
+  <div class="wrap">
+    <p style="text-align:center;font-size:12px;color:var(--text-faint);margin-top:12px">《中医诊所备案证》登记号：MAKGHJ6M-045010315D2182 · 资质可在国家卫健委政务服务平台查询（<a href="https://zwfw.nhc.gov.cn/cxx/" target="_blank" rel="noopener" style="color:var(--amber)">zwfw.nhc.gov.cn/cxx</a>）</p>
+    <p style="text-align:center;font-size:12px;color:var(--text-faint);margin-top:6px">ICP 备案：桂ICP备XXXXXXXX号（办理中） · <a href="privacy.html" style="color:var(--amber)">隐私政策</a></p>
+    <p class="disclaimer">免责声明：本页面为科普与宣传用途，不构成任何形式的诊断、治疗建议或医疗承诺。具体辨证与调理方案，请以执业医师面诊结果为准。详细地址、路线与门诊时间以官方渠道公示为准。如有明显不适，请及时就医。</p>
+  </div>
+</footer>
+
+<script>
+// 滚动显示动画（仅 transform/opacity，符合主站动画约束）
+document.addEventListener('DOMContentLoaded', function(){
+  var els = document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){
+    els.forEach(function(e){e.classList.add('in')});
+    return;
+  }
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+  }, {threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+});
+// FAQ 手风琴
+document.querySelectorAll('.faq-item').forEach(function(item){
+  var q = item.querySelector('.faq-q');
+  q.addEventListener('click', function(){
+    document.querySelectorAll('.faq-item').forEach(function(o){ if(o!==item) o.classList.remove('open'); });
+    item.classList.toggle('open');
+  });
+});
+</script>
+<script>
+(function(){
+  var KEY='fy-theme';
+  var btn=document.getElementById('themeBtn');
+  function icon(light){var s=btn?btn.querySelector('svg'):null;if(!s)return;s.innerHTML=light?'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>':'<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>';}
+  function apply(t){document.documentElement.setAttribute('data-theme',t);icon(t==='light');}
+  if(btn)btn.addEventListener('click',function(){var t=document.documentElement.getAttribute('data-theme')==='light'?'dark':'light';apply(t);try{localStorage.setItem(KEY,t)}catch(e){}});
+  window.addEventListener('storage',function(e){if(e.key===KEY&&e.newValue)apply(e.newValue);});
+  apply(document.documentElement.getAttribute('data-theme')||'dark');
+})();
+</script>
+</body>
+</html>
