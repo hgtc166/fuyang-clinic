@@ -16,7 +16,9 @@
 <meta name="twitter:description" content="专注三大专病门诊的扶阳学派中医馆。" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&display=swap" rel="stylesheet" />
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&display=swap"></noscript>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"MedicalOrganization","name":"南宁扶阳中医馆","alternateName":"广西郑钦安扶阳医学研究中心","description":"专注睡眠障碍、代谢疾病、男科康复三大专病门诊的扶阳学派中医馆。","areaServed":"南宁市青秀区","medicalSpecialty":["睡眠障碍","代谢性疾病","男科康复"],"knowsAbout":["中医扶阳学派","辨证论治","内调外治","针灸","艾灸","中药调理","膏方"]}
 </script>
@@ -221,13 +223,44 @@ section{position:relative}
   user-select:none;pointer-events:none;
 }
 .hero-grid{display:grid;grid-template-columns:1fr;align-items:center;justify-items:center;text-align:center}
+.hero-eyebrow{
+  display:inline-block;font-size:13px;font-weight:500;letter-spacing:2px;
+  color:var(--red);padding:7px 16px;border:1px solid var(--hairline);border-radius:999px;
+  background:var(--glass);margin-bottom:8px;
+}
 .hero h1{
   font-family:var(--font-serif);
   font-size:clamp(42px,7vw,88px);line-height:1.1;font-weight:900;letter-spacing:1px;
-  margin:26px 0 20px;
-  color:rgba(28,22,14,0.78);
+  margin:22px 0 18px;
+  color:rgba(28,22,14,0.82);
 }
-html[data-theme="dark"] .hero h1{color:rgba(255,255,255,0.94)}
+html[data-theme="dark"] .hero h1{color:rgba(255,255,255,0.96)}
+.hero-sub{
+  max-width:620px;margin:0 auto 30px;font-size:clamp(15px,1.6vw,17px);line-height:1.75;
+  color:var(--text-dim);
+}
+.hero-stats{
+  display:flex;justify-content:center;gap:14px;margin:0 auto 34px;flex-wrap:wrap;
+}
+.hero-stat{
+  display:flex;flex-direction:column;align-items:center;gap:4px;
+  padding:16px 26px;border-radius:16px;background:var(--glass);border:1px solid var(--hairline);
+  min-width:118px;
+}
+.hero-stat b{font-size:26px;font-weight:700;color:var(--red);line-height:1}
+.hero-stat span{font-size:13px;color:var(--text-dim)}
+.hero-cta-row{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+/* Hero 入场动画：eyebrow→h1→sub→stats→cta 依次渐显上移 */
+.hero-in > *{opacity:0;transform:translateY(28px);animation:heroIn .9s cubic-bezier(.22,1,.36,1) forwards}
+.hero-in .hero-eyebrow{animation-delay:.05s}
+.hero-in h1{animation-delay:.18s}
+.hero-in .hero-sub{animation-delay:.34s}
+.hero-in .hero-stats{animation-delay:.5s}
+.hero-in .hero-cta-row{animation-delay:.66s}
+@keyframes heroIn{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){
+  .hero-in > *{opacity:1;transform:none;animation:none}
+}
 .grad{
   background:linear-gradient(120deg,var(--red),var(--amber));
   -webkit-background-clip:text;background-clip:text;color:transparent;
@@ -258,6 +291,26 @@ html[data-theme="dark"] .hero h1{color:rgba(255,255,255,0.94)}
 .sec-head h2{font-family:var(--font-serif);font-size:clamp(28px,3.6vw,42px);font-weight:700;letter-spacing:.3px;margin:14px 0 14px;line-height:1.15}
 .sec-head h2::after{content:"";display:block;width:46px;height:3px;border-radius:3px;margin:16px auto 0;background:linear-gradient(90deg,var(--red),var(--amber));opacity:.85}
 .sec-head p{color:var(--text-dim);font-size:16px}
+
+/* ============ 最新文章（博客导流） ============ */
+.post-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.post-card{
+  display:flex;flex-direction:column;gap:12px;padding:26px 24px;border-radius:var(--r);
+  background:var(--glass);border:1px solid var(--hairline);
+  text-decoration:none;color:var(--text);transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease;
+}
+.post-card:hover{transform:translateY(-5px);border-color:var(--red);box-shadow:var(--shadow)}
+.post-cat{
+  align-self:flex-start;font-size:12px;font-weight:500;letter-spacing:.5px;color:var(--red);
+  padding:5px 12px;border-radius:999px;background:var(--glass-2);border:1px solid var(--hairline-soft);
+}
+.post-card h3{font-family:var(--font-serif);font-size:20px;font-weight:700;line-height:1.35;color:var(--text)}
+.post-card p{font-size:14px;line-height:1.7;color:var(--text-dim);flex:1}
+.post-more{font-size:14px;font-weight:500;color:var(--red);margin-top:4px}
+.post-all{text-align:center;margin-top:36px}
+@media (max-width:860px){
+  .post-grid{grid-template-columns:1fr}
+}
 
 /* ============ Feature grid 3x3 ============ */
 .feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -606,12 +659,22 @@ html[data-theme="dark"] .hero h1{color:rgba(255,255,255,0.94)}
 <!-- ============ HERO ============ -->
 <header class="hero" id="top">
   <div class="wrap hero-grid">
-    <div class="reveal">
+    <div class="reveal hero-in">
+      <span class="hero-eyebrow">广西郑钦安扶阳医学研究中心</span>
       <h1>扶阳固本 <span class="grad">阴阳同调</span><br/>内外同治</h1>
+      <p class="hero-sub">南宁青秀区专病中医馆，以扶阳学派百年传承为根，聚焦睡眠、代谢、男科三大高发慢病，提供辨证施治、内外同治的个体化调理。</p>
+      <div class="hero-stats">
+        <div class="hero-stat"><b class="mono">百年</b><span>扶阳学派传承</span></div>
+        <div class="hero-stat"><b class="mono">三大</b><span>专病门诊</span></div>
+        <div class="hero-stat"><b class="mono">博士</b><span>领衔主诊</span></div>
+      </div>
+      <div class="hero-cta-row">
+        <a href="#services" class="btn btn-primary" style="color:#fff" id="ctaExplore">探索专病门诊 →</a>
+        <a href="visit.html" class="btn btn-ghost">到馆指南</a>
+      </div>
     </div>
   </div>
   <div class="hero-bottom">
-    <a href="#about" class="btn btn-primary" style="color:#fff" id="ctaExplore">探索扶阳 →</a>
     <span class="hero-scroll" aria-hidden="true"><span class="mouse"></span></span>
   </div>
 </header>
@@ -894,6 +957,40 @@ html[data-theme="dark"] .hero h1{color:rgba(255,255,255,0.94)}
       </div>
     </div>
 
+  </div>
+</section>
+
+<!-- ============ 最新文章（博客导流） ============ -->
+<section class="sec" id="journal">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Journal</span>
+      <h2>扶阳医话 · 最新文章</h2>
+      <p>从扶阳学派源流到专病调理科普，持续更新可验证的中医知识。</p>
+    </div>
+    <div class="post-grid reveal">
+      <a class="post-card" href="blog/fuyang-school.html">
+        <span class="post-cat">学派源流</span>
+        <h3>什么是扶阳学派？</h3>
+        <p>从郑钦安到卢氏一脉，读懂「阳主阴从」的扶阳理法，以及它如何指导今天的辨证调理。</p>
+        <span class="post-more">阅读全文 →</span>
+      </a>
+      <a class="post-card" href="blog/insomnia-hypertension.html">
+        <span class="post-cat">睡眠专病</span>
+        <h3>失眠和高血压有关系吗？</h3>
+        <p>失眠与血压常相兼为病，从扶阳视角看二者共病的机理与协同调治思路。</p>
+        <span class="post-more">阅读全文 →</span>
+      </a>
+      <a class="post-card" href="blog/nafld-diabetes.html">
+        <span class="post-cat">代谢专病</span>
+        <h3>脂肪肝和糖尿病，为什么会同时出现？</h3>
+        <p>代谢相关脂肪性肝病与2型糖尿病高度共病，解析其共同病机与调理路径。</p>
+        <span class="post-more">阅读全文 →</span>
+      </a>
+    </div>
+    <div class="post-all reveal">
+      <a href="blog/yangxu-tizhi.html" class="btn btn-ghost">查看全部文章 →</a>
+    </div>
   </div>
 </section>
 
